@@ -12,6 +12,14 @@ CGFloat const circleRadius = 7;
 
 @implementation MSTimelineView
 
+#pragma mark - Setters
+
+- (void)setHighlighted:(BOOL)highlighted
+{
+    _highlighted = highlighted;
+    [self setNeedsDisplay];
+}
+
 #pragma mark - NSObject
 
 - (void)awakeFromNib
@@ -29,6 +37,7 @@ CGFloat const circleRadius = 7;
     // Draw half of vertical line
     CGContextSetLineWidth(context, 2.0);
     CGContextSetStrokeColorWithColor(context, [[UIColor greenColor] CGColor]);
+    CGContextSetFillColorWithColor(context, [[UIColor greenColor] CGColor]);
     CGContextMoveToPoint(context, self.bounds.size.width/2.f, 0);
     CGContextAddLineToPoint(context, self.bounds.size.width/2.f, self.bounds.size.height/2.f - circleRadius);
     CGContextStrokePath(context);
@@ -38,7 +47,12 @@ CGFloat const circleRadius = 7;
                                                                            self.bounds.size.height/2.f - circleRadius,
                                                                            circleRadius*2,
                                                                            circleRadius*2)];
-    [circlePath stroke];
+    if (self.isHighlighted) {
+        [circlePath fill];
+    }
+    else {
+        [circlePath stroke];
+    }
 
     // Draw second half of vertical line
     CGContextMoveToPoint(context, self.bounds.size.width/2.f, self.bounds.size.height/2.f + circleRadius);

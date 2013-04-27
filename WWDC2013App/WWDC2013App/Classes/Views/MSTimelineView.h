@@ -10,4 +10,6 @@
 
 @interface MSTimelineView : UIView
 
+@property (nonatomic, getter = isHighlighted) BOOL highlighted;
+
 @end
