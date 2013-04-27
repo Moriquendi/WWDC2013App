@@ -23,6 +23,8 @@
 		90A59F2E172BFEFC00595B85 /* KaratePandaiOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F2B172BFEFC00595B85 /* KaratePandaiOS.plist */; };
 		90A59F2F172BFEFC00595B85 /* KaratePandaPC.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F2C172BFEFC00595B85 /* KaratePandaPC.plist */; };
 		90A59F31172C02C400595B85 /* Base-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F30172C02C400595B85 /* Base-1.png */; };
+		90A59F3C172C10FF00595B85 /* MSNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A59F39172C10FF00595B85 /* MSNavigationBar.m */; };
+		90A59F3D172C10FF00595B85 /* MSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A59F3B172C10FF00595B85 /* MSNavigationController.m */; };
 		90D70E2417285B2800D7468E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2317285B2800D7468E /* UIKit.framework */; };
 		90D70E2617285B2800D7468E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2517285B2800D7468E /* Foundation.framework */; };
 		90D70E2817285B2800D7468E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2717285B2800D7468E /* CoreGraphics.framework */; };
@@ -59,6 +61,10 @@
 		90A59F2B172BFEFC00595B85 /* KaratePandaiOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = KaratePandaiOS.plist; path = ModelData/KaratePandaiOS.plist; sourceTree = "<group>"; };
 		90A59F2C172BFEFC00595B85 /* KaratePandaPC.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = KaratePandaPC.plist; path = ModelData/KaratePandaPC.plist; sourceTree = "<group>"; };
 		90A59F30172C02C400595B85 /* Base-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Base-1.png"; sourceTree = "<group>"; };
+		90A59F38172C10FF00595B85 /* MSNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSNavigationBar.h; path = ../../extern/MSNavigationController/src/MSNavigationBar.h; sourceTree = "<group>"; };
+		90A59F39172C10FF00595B85 /* MSNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSNavigationBar.m; path = ../../extern/MSNavigationController/src/MSNavigationBar.m; sourceTree = "<group>"; };
+		90A59F3A172C10FF00595B85 /* MSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSNavigationController.h; path = ../../extern/MSNavigationController/src/MSNavigationController.h; sourceTree = "<group>"; };
+		90A59F3B172C10FF00595B85 /* MSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSNavigationController.m; path = ../../extern/MSNavigationController/src/MSNavigationController.m; sourceTree = "<group>"; };
 		90D70E2017285B2800D7468E /* WWDC2013App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC2013App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D70E2317285B2800D7468E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		90D70E2517285B2800D7468E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -167,6 +173,25 @@
 			name = ModelData;
 			sourceTree = "<group>";
 		};
+		90A59F36172C102F00595B85 /* submodules */ = {
+			isa = PBXGroup;
+			children = (
+				90A59F37172C103900595B85 /* MSNavigationBar */,
+			);
+			name = submodules;
+			sourceTree = "<group>";
+		};
+		90A59F37172C103900595B85 /* MSNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				90A59F38172C10FF00595B85 /* MSNavigationBar.h */,
+				90A59F39172C10FF00595B85 /* MSNavigationBar.m */,
+				90A59F3A172C10FF00595B85 /* MSNavigationController.h */,
+				90A59F3B172C10FF00595B85 /* MSNavigationController.m */,
+			);
+			name = MSNavigationBar;
+			sourceTree = "<group>";
+		};
 		90D70E1717285B2800D7468E = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +225,7 @@
 			children = (
 				90D70E3217285B2800D7468E /* MSAppDelegate.h */,
 				90D70E3317285B2800D7468E /* MSAppDelegate.m */,
+				90A59F36172C102F00595B85 /* submodules */,
 				901F901D172B1D8100954653 /* Model */,
 				901F901F172B1D9E00954653 /* ViewControllers */,
 				901F9020172B1DA600954653 /* Views */,
@@ -310,6 +336,8 @@
 				909756901728844500B6723B /* MSProjectCell.m in Sources */,
 				9070C03E172BBBE500FD5EFD /* MSTimelineView.m in Sources */,
 				9070C041172BCF4900FD5EFD /* MSStyleSheet.m in Sources */,
+				90A59F3C172C10FF00595B85 /* MSNavigationBar.m in Sources */,
+				90A59F3D172C10FF00595B85 /* MSNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

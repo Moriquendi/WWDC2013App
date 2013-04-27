@@ -1,0 +1,3 @@
+[submodule "extern/MSNavigationController"]
+	path = extern/MSNavigationController
+	url = git@github.com:Moriquendi/MSNavigationController.git

@@ -10,6 +10,7 @@
 
 @implementation UIView (Animations)
 
+#pragma mark - UIView (Animation)
 
 - (void)fadeInDuration:(NSTimeInterval)duration delay:(NSTimeInterval)delay
 {

@@ -9,8 +9,8 @@
 #import "MSAppDelegate.h"
 
 #import "MSViewController.h"
-
 #import "MSProjectsViewController.h"
+#import "MSNavigationController.h"
 
 @implementation MSAppDelegate
 
@@ -21,8 +21,8 @@
     
     //self.viewController = [[MSViewController alloc] initWithNibName:@"MSViewController" bundle:nil];
     self.viewController = [[MSProjectsViewController alloc] init];
-    
-    self.window.rootViewController = self.viewController;
+    MSNavigationController *navController = [[MSNavigationController alloc] initWithRootViewController:self.viewController];
+    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;
 }

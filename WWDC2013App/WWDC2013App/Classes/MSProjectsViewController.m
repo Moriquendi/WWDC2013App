@@ -73,4 +73,10 @@ UITableViewDelegate>
     return kProjectCellHeight;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MSProjectCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+}
+
 @end
