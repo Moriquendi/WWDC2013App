@@ -7,6 +7,7 @@
 //
 
 #import "MSProjectCell.h"
+#import "MSStyleSheet.h"
 
 @interface MSProjectCell ()
 @property (weak, nonatomic) IBOutlet UILabel *projectNameLabel;
@@ -35,8 +36,13 @@
 
 - (void)awakeFromNib
 {
+    // Background
     UIImage *bgImage = [[UIImage imageNamed:@"projectBg"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10)];
     self.contentView.image = bgImage;
+    
+    // Fonts
+    self.projectNameLabel.font = [[MSStyleSheet sharedInstance] defaultHeaderTextFont];
+    self.projectNameLabel.textColor = [[MSStyleSheet sharedInstance] darkTextColor];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

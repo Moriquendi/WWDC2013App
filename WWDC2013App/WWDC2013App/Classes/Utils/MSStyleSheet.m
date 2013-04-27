@@ -23,10 +23,25 @@
 }
 
 #pragma mark - MSStyleSheet
+#pragma mark - Colors
 
 - (UIColor *)defaultBackgroundColor
 {
     return [UIColor colorWithWhite:240.f/255.f alpha:1.0];
+}
+
+#pragma mark - Fonts
+
+- (UIFont *)defaultHeaderTextFont
+{
+    return [UIFont fontWithName:@"Optima-Bold" size:20.0];
+}
+
+#pragma mark - Fonts colors
+
+- (UIColor *)darkTextColor
+{
+    return [UIColor blackColor];
 }
 
 @end

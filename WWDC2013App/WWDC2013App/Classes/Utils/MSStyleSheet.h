@@ -19,4 +19,10 @@
 // UIColors
 - (UIColor *)defaultBackgroundColor;
 
+// Fonts
+- (UIFont *)defaultHeaderTextFont;
+
+// Fonts colors
+- (UIColor *)darkTextColor;
+
 @end
