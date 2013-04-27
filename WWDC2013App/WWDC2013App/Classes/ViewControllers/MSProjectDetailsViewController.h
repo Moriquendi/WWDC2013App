@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MSProject.h"
 
 @interface MSProjectDetailsViewController : UIViewController
+
+- (id)initWithProjectDetails:(MSProject *)project;
 
 @end

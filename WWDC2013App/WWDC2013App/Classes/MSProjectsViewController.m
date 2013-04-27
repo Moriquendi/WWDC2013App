@@ -78,7 +78,7 @@ UITableViewDelegate>
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MSProjectDetailsViewController *projectDetailsVC = [[MSProjectDetailsViewController alloc] init];
+    MSProjectDetailsViewController *projectDetailsVC = [[MSProjectDetailsViewController alloc] initWithProjectDetails:self.projects[indexPath.row]];
     [self presentSemiViewController:projectDetailsVC];
 }
 
