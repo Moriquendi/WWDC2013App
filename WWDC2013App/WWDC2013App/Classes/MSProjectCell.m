@@ -11,6 +11,7 @@
 @interface MSProjectCell ()
 @property (weak, nonatomic) IBOutlet UILabel *projectNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *projectImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *contentView;
 
 @end
 
@@ -31,6 +32,12 @@
 }
 
 #pragma mark - UITableViewCell
+
+- (void)awakeFromNib
+{
+    UIImage *bgImage = [[UIImage imageNamed:@"projectBg"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10)];
+    self.contentView.image = bgImage;
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {

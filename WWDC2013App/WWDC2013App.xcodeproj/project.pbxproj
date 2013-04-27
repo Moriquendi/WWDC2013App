@@ -10,6 +10,7 @@
 		901F9023172B20FE00954653 /* farm2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 901F9022172B20FE00954653 /* farm2-1.png */; };
 		9070C03E172BBBE500FD5EFD /* MSTimelineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9070C03D172BBBE500FD5EFD /* MSTimelineView.m */; };
 		9070C041172BCF4900FD5EFD /* MSStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9070C040172BCF4900FD5EFD /* MSStyleSheet.m */; };
+		9070C043172BDB5000FD5EFD /* projectBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9070C042172BDB5000FD5EFD /* projectBg.png */; };
 		909756831728699700B6723B /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756821728699700B6723B /* UIView+Animations.m */; };
 		90975685172870B200B6723B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90975684172870B200B6723B /* QuartzCore.framework */; };
 		9097568A1728823F00B6723B /* MSProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756891728823F00B6723B /* MSProjectsViewController.m */; };
@@ -35,6 +36,7 @@
 		9070C03D172BBBE500FD5EFD /* MSTimelineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSTimelineView.m; path = Classes/Views/MSTimelineView.m; sourceTree = "<group>"; };
 		9070C03F172BCF4900FD5EFD /* MSStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSStyleSheet.h; path = Classes/Utils/MSStyleSheet.h; sourceTree = "<group>"; };
 		9070C040172BCF4900FD5EFD /* MSStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSStyleSheet.m; path = Classes/Utils/MSStyleSheet.m; sourceTree = "<group>"; };
+		9070C042172BDB5000FD5EFD /* projectBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = projectBg.png; path = Images/projectBg.png; sourceTree = "<group>"; };
 		909756811728699700B6723B /* UIView+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Animations.h"; path = "Classes/UIView+Animations.h"; sourceTree = "<group>"; };
 		909756821728699700B6723B /* UIView+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Animations.m"; path = "Classes/UIView+Animations.m"; sourceTree = "<group>"; };
 		90975684172870B200B6723B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -131,6 +133,15 @@
 			path = Images/Projects;
 			sourceTree = "<group>";
 		};
+		9070C044172BDB5300FD5EFD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9070C042172BDB5000FD5EFD /* projectBg.png */,
+				901F9021172B20FE00954653 /* Projects */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		90D70E1717285B2800D7468E = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +187,7 @@
 		90D70E2A17285B2800D7468E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				901F9021172B20FE00954653 /* Projects */,
+				9070C044172BDB5300FD5EFD /* Images */,
 				90D70E2B17285B2800D7468E /* WWDC2013App-Info.plist */,
 				90D70E2C17285B2800D7468E /* InfoPlist.strings */,
 				90D70E2F17285B2800D7468E /* main.m */,
@@ -247,6 +258,7 @@
 				90D70E4017285B2800D7468E /* MSViewController.xib in Resources */,
 				909756921728845700B6723B /* MSProjectCell.xib in Resources */,
 				901F9023172B20FE00954653 /* farm2-1.png in Resources */,
+				9070C043172BDB5000FD5EFD /* projectBg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
