@@ -11,7 +11,7 @@
 @interface MSProject : NSObject
 
 @property (nonatomic, readonly, strong) NSString *date;
-@property (nonatomic, readonly, strong) NSString *imageName;
+@property (nonatomic, readonly, strong) NSArray *imageNames;
 @property (nonatomic, readonly, strong) NSString *projectDescription;
 @property (nonatomic, readonly, strong) NSString *projectName;
 

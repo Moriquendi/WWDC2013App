@@ -10,8 +10,8 @@
 #import "MSProject.h"
 #import "MSProjectCell.h"
 #import "MSStyleSheet.h"
-
 #import "UIViewController+KNSemiModal.h"
+#import "MSProjectDetailsViewController.h"
 
 CGFloat const kProjectCellHeight = 200;
 NSString *const kProjectCellIdentifier = @"kProjectCell";
@@ -63,7 +63,7 @@ UITableViewDelegate>
     MSProject *project = self.projects[indexPath.row];
     MSProjectCell *projectCell = [tableView dequeueReusableCellWithIdentifier:kProjectCellIdentifier];
 
-    projectCell.projectImage = [UIImage imageNamed:project.imageName];
+    projectCell.projectImage = [UIImage imageNamed:project.imageNames[0]];
     projectCell.projectName = project.projectName;
     return projectCell;
 }
@@ -77,9 +77,8 @@ UITableViewDelegate>
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIView *semiView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
-    semiView.backgroundColor = [UIColor redColor];
-    [self presentSemiView:semiView];
+    MSProjectDetailsViewController *projectDetailsVC = [[MSProjectDetailsViewController alloc] init];
+    [self presentSemiViewController:projectDetailsVC];
 }
 
 @end

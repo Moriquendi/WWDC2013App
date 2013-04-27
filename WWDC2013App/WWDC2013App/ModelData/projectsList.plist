@@ -4,10 +4,14 @@
 <dict>
 	<key>projectsList</key>
 	<array>
+		<string>KrakJam</string>
+		<string>BurglarsNight</string>
 		<string>KaratePandaPC</string>
 		<string>Farm2</string>
 		<string>KaratePandaiOS</string>
 		<string>BaseCRM</string>
+		<string>CocoaCamp</string>
+		<string>LeapMotion</string>
 	</array>
 </dict>
 </plist>

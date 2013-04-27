@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date</key>
+	<string>2012</string>
+	<key>imageNames</key>
+	<array>
+		<string>krakjam-1</string>
+	</array>
+	<key>movie</key>
+	<string>KrakJamTrailer</string>
+	<key>projectDescription</key>
+	<string>Krak Jam 2012. Create a game in 48h</string>
+	<key>projectName</key>
+	<string>Global Game Jam 2012</string>
+</dict>
+</plist>

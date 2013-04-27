@@ -4,8 +4,10 @@
 <dict>
 	<key>date</key>
 	<string>2012</string>
-	<key>imageName</key>
-	<string>farm2-1</string>
+	<key>imageNames</key>
+	<array>
+		<string>farm2-1</string>
+	</array>
 	<key>projectDescription</key>
 	<string>Farm 2 bla bla</string>
 	<key>projectName</key>

@@ -4,8 +4,10 @@
 <dict>
 	<key>date</key>
 	<string>2012</string>
-	<key>imageName</key>
-	<string>karatePandaiOS-1</string>
+	<key>imageNames</key>
+	<array>
+		<string>karatePandaiOS-1</string>
+	</array>
 	<key>projectDescription</key>
 	<string>Karate Panda iOS bla bla desc</string>
 	<key>projectName</key>

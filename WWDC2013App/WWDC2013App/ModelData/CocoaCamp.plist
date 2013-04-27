@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date</key>
+	<string>2013</string>
+	<key>imageNames</key>
+	<array>
+		<string>krakjam-1</string>
+	</array>
+	<key>projectDescription</key>
+	<string>Cocoa Camp. Dreams come true.</string>
+	<key>projectName</key>
+	<string>Cocoa Camp 2013.</string>
+</dict>
+</plist>

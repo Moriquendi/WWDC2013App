@@ -26,6 +26,19 @@
 		90A59F3C172C10FF00595B85 /* MSNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A59F39172C10FF00595B85 /* MSNavigationBar.m */; };
 		90A59F3D172C10FF00595B85 /* MSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A59F3B172C10FF00595B85 /* MSNavigationController.m */; };
 		90A59F45172C22FA00595B85 /* UIViewController+KNSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A59F44172C22FA00595B85 /* UIViewController+KNSemiModal.m */; };
+		90A59F4A172C25AC00595B85 /* MSProjectDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A59F48172C25AC00595B85 /* MSProjectDetailsViewController.m */; };
+		90A59F4B172C25AC00595B85 /* MSProjectDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F49172C25AC00595B85 /* MSProjectDetailsViewController.xib */; };
+		90A59F53172C6DB700595B85 /* burglars-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F4C172C6DB700595B85 /* burglars-1.png */; };
+		90A59F54172C6DB700595B85 /* KaratePandaTrailer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F4D172C6DB700595B85 /* KaratePandaTrailer.mp4 */; };
+		90A59F55172C6DB700595B85 /* karatePandaiOS-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F4E172C6DB700595B85 /* karatePandaiOS-1.png */; };
+		90A59F56172C6DB700595B85 /* karatePandaPC-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F4F172C6DB700595B85 /* karatePandaPC-0.png */; };
+		90A59F57172C6DB700595B85 /* karatePandaPC-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F50172C6DB700595B85 /* karatePandaPC-1.png */; };
+		90A59F58172C6DB700595B85 /* KrakJamTrailer.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F51172C6DB700595B85 /* KrakJamTrailer.m4v */; };
+		90A59F59172C6DB700595B85 /* krakjam-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F52172C6DB700595B85 /* krakjam-1.png */; };
+		90A59F5C172C6DCB00595B85 /* BurglarsNight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F5A172C6DCB00595B85 /* BurglarsNight.plist */; };
+		90A59F5D172C6DCB00595B85 /* KrakJam.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F5B172C6DCB00595B85 /* KrakJam.plist */; };
+		90A59F60172C7ABF00595B85 /* CocoaCamp.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F5E172C7ABF00595B85 /* CocoaCamp.plist */; };
+		90A59F61172C7ABF00595B85 /* LeapMotion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F5F172C7ABF00595B85 /* LeapMotion.plist */; };
 		90D70E2417285B2800D7468E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2317285B2800D7468E /* UIKit.framework */; };
 		90D70E2617285B2800D7468E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2517285B2800D7468E /* Foundation.framework */; };
 		90D70E2817285B2800D7468E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2717285B2800D7468E /* CoreGraphics.framework */; };
@@ -68,6 +81,20 @@
 		90A59F3B172C10FF00595B85 /* MSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSNavigationController.m; path = ../../extern/MSNavigationController/src/MSNavigationController.m; sourceTree = "<group>"; };
 		90A59F43172C22FA00595B85 /* UIViewController+KNSemiModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+KNSemiModal.h"; path = "../../extern/SemiModalVC/Source/UIViewController+KNSemiModal.h"; sourceTree = "<group>"; };
 		90A59F44172C22FA00595B85 /* UIViewController+KNSemiModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+KNSemiModal.m"; path = "../../extern/SemiModalVC/Source/UIViewController+KNSemiModal.m"; sourceTree = "<group>"; };
+		90A59F47172C25AC00595B85 /* MSProjectDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSProjectDetailsViewController.h; path = Classes/ViewControllers/MSProjectDetailsViewController.h; sourceTree = "<group>"; };
+		90A59F48172C25AC00595B85 /* MSProjectDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSProjectDetailsViewController.m; path = Classes/ViewControllers/MSProjectDetailsViewController.m; sourceTree = "<group>"; };
+		90A59F49172C25AC00595B85 /* MSProjectDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSProjectDetailsViewController.xib; path = Classes/ViewControllers/MSProjectDetailsViewController.xib; sourceTree = "<group>"; };
+		90A59F4C172C6DB700595B85 /* burglars-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "burglars-1.png"; sourceTree = "<group>"; };
+		90A59F4D172C6DB700595B85 /* KaratePandaTrailer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = KaratePandaTrailer.mp4; sourceTree = "<group>"; };
+		90A59F4E172C6DB700595B85 /* karatePandaiOS-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "karatePandaiOS-1.png"; sourceTree = "<group>"; };
+		90A59F4F172C6DB700595B85 /* karatePandaPC-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "karatePandaPC-0.png"; sourceTree = "<group>"; };
+		90A59F50172C6DB700595B85 /* karatePandaPC-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "karatePandaPC-1.png"; sourceTree = "<group>"; };
+		90A59F51172C6DB700595B85 /* KrakJamTrailer.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = KrakJamTrailer.m4v; sourceTree = "<group>"; };
+		90A59F52172C6DB700595B85 /* krakjam-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "krakjam-1.png"; sourceTree = "<group>"; };
+		90A59F5A172C6DCB00595B85 /* BurglarsNight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BurglarsNight.plist; path = ModelData/BurglarsNight.plist; sourceTree = "<group>"; };
+		90A59F5B172C6DCB00595B85 /* KrakJam.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = KrakJam.plist; path = ModelData/KrakJam.plist; sourceTree = "<group>"; };
+		90A59F5E172C7ABF00595B85 /* CocoaCamp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CocoaCamp.plist; path = ModelData/CocoaCamp.plist; sourceTree = "<group>"; };
+		90A59F5F172C7ABF00595B85 /* LeapMotion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LeapMotion.plist; path = ModelData/LeapMotion.plist; sourceTree = "<group>"; };
 		90D70E2017285B2800D7468E /* WWDC2013App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC2013App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D70E2317285B2800D7468E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		90D70E2517285B2800D7468E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -124,6 +151,9 @@
 		901F901F172B1D9E00954653 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				90A59F47172C25AC00595B85 /* MSProjectDetailsViewController.h */,
+				90A59F48172C25AC00595B85 /* MSProjectDetailsViewController.m */,
+				90A59F49172C25AC00595B85 /* MSProjectDetailsViewController.xib */,
 				90D70E3B17285B2800D7468E /* MSViewController.h */,
 				90D70E3C17285B2800D7468E /* MSViewController.m */,
 				909756881728823F00B6723B /* MSProjectsViewController.h */,
@@ -148,6 +178,13 @@
 		901F9021172B20FE00954653 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				90A59F4C172C6DB700595B85 /* burglars-1.png */,
+				90A59F4D172C6DB700595B85 /* KaratePandaTrailer.mp4 */,
+				90A59F4E172C6DB700595B85 /* karatePandaiOS-1.png */,
+				90A59F4F172C6DB700595B85 /* karatePandaPC-0.png */,
+				90A59F50172C6DB700595B85 /* karatePandaPC-1.png */,
+				90A59F51172C6DB700595B85 /* KrakJamTrailer.m4v */,
+				90A59F52172C6DB700595B85 /* krakjam-1.png */,
 				90A59F30172C02C400595B85 /* Base-1.png */,
 				901F9022172B20FE00954653 /* farm2-1.png */,
 			);
@@ -167,10 +204,14 @@
 		90A59F29172BF06B00595B85 /* ModelData */ = {
 			isa = PBXGroup;
 			children = (
+				90A59F5E172C7ABF00595B85 /* CocoaCamp.plist */,
+				90A59F5F172C7ABF00595B85 /* LeapMotion.plist */,
 				90A59F25172BF06900595B85 /* Farm2.plist */,
 				90A59F2A172BFEFC00595B85 /* BaseCRM.plist */,
 				90A59F2B172BFEFC00595B85 /* KaratePandaiOS.plist */,
 				90A59F2C172BFEFC00595B85 /* KaratePandaPC.plist */,
+				90A59F5A172C6DCB00595B85 /* BurglarsNight.plist */,
+				90A59F5B172C6DCB00595B85 /* KrakJam.plist */,
 				90A59F26172BF06900595B85 /* projectsList.plist */,
 			);
 			name = ModelData;
@@ -330,6 +371,18 @@
 				90A59F2E172BFEFC00595B85 /* KaratePandaiOS.plist in Resources */,
 				90A59F2F172BFEFC00595B85 /* KaratePandaPC.plist in Resources */,
 				90A59F31172C02C400595B85 /* Base-1.png in Resources */,
+				90A59F4B172C25AC00595B85 /* MSProjectDetailsViewController.xib in Resources */,
+				90A59F53172C6DB700595B85 /* burglars-1.png in Resources */,
+				90A59F54172C6DB700595B85 /* KaratePandaTrailer.mp4 in Resources */,
+				90A59F55172C6DB700595B85 /* karatePandaiOS-1.png in Resources */,
+				90A59F56172C6DB700595B85 /* karatePandaPC-0.png in Resources */,
+				90A59F57172C6DB700595B85 /* karatePandaPC-1.png in Resources */,
+				90A59F58172C6DB700595B85 /* KrakJamTrailer.m4v in Resources */,
+				90A59F59172C6DB700595B85 /* krakjam-1.png in Resources */,
+				90A59F5C172C6DCB00595B85 /* BurglarsNight.plist in Resources */,
+				90A59F5D172C6DCB00595B85 /* KrakJam.plist in Resources */,
+				90A59F60172C7ABF00595B85 /* CocoaCamp.plist in Resources */,
+				90A59F61172C7ABF00595B85 /* LeapMotion.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +405,7 @@
 				90A59F3C172C10FF00595B85 /* MSNavigationBar.m in Sources */,
 				90A59F3D172C10FF00595B85 /* MSNavigationController.m in Sources */,
 				90A59F45172C22FA00595B85 /* UIViewController+KNSemiModal.m in Sources */,
+				90A59F4A172C25AC00595B85 /* MSProjectDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

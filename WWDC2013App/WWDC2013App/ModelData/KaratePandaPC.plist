@@ -4,8 +4,13 @@
 <dict>
 	<key>date</key>
 	<string>2011</string>
-	<key>imageName</key>
-	<string>karatePanda-1</string>
+	<key>imageNames</key>
+	<array>
+		<string>karatePandaPC-1</string>
+		<string>karatePandaPC-0</string>
+	</array>
+	<key>movie</key>
+	<string>KaratePandaTrailer</string>
 	<key>projectDescription</key>
 	<string>Karate Panda bla bla desc</string>
 	<key>projectName</key>
