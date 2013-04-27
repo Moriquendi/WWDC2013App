@@ -23,6 +23,21 @@
 }
 
 #pragma mark - MSStyleSheet
+
+- (id)init
+{
+    if (self = [super init]) {
+        [self _configureAppearanceProxies];
+    }
+    return self;
+}
+
+- (void)_configureAppearanceProxies
+{
+    [[UINavigationBar appearance] setTitleTextAttributes:@{UITextAttributeTextColor : [UIColor darkGrayColor],
+                        UITextAttributeTextShadowOffset : [NSValue valueWithCGPoint:CGPointMake(0, 0)]}];
+}
+
 #pragma mark - Colors
 
 - (UIColor *)defaultBackgroundColor
