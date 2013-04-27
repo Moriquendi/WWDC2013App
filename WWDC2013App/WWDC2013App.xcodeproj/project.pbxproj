@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		901F9023172B20FE00954653 /* farm2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 901F9022172B20FE00954653 /* farm2-1.png */; };
 		9070C03E172BBBE500FD5EFD /* MSTimelineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9070C03D172BBBE500FD5EFD /* MSTimelineView.m */; };
+		9070C041172BCF4900FD5EFD /* MSStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9070C040172BCF4900FD5EFD /* MSStyleSheet.m */; };
 		909756831728699700B6723B /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756821728699700B6723B /* UIView+Animations.m */; };
 		90975685172870B200B6723B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90975684172870B200B6723B /* QuartzCore.framework */; };
 		9097568A1728823F00B6723B /* MSProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756891728823F00B6723B /* MSProjectsViewController.m */; };
@@ -32,6 +33,8 @@
 		901F9022172B20FE00954653 /* farm2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "farm2-1.png"; sourceTree = "<group>"; };
 		9070C03C172BBBE500FD5EFD /* MSTimelineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSTimelineView.h; path = Classes/Views/MSTimelineView.h; sourceTree = "<group>"; };
 		9070C03D172BBBE500FD5EFD /* MSTimelineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSTimelineView.m; path = Classes/Views/MSTimelineView.m; sourceTree = "<group>"; };
+		9070C03F172BCF4900FD5EFD /* MSStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSStyleSheet.h; path = Classes/Utils/MSStyleSheet.h; sourceTree = "<group>"; };
+		9070C040172BCF4900FD5EFD /* MSStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSStyleSheet.m; path = Classes/Utils/MSStyleSheet.m; sourceTree = "<group>"; };
 		909756811728699700B6723B /* UIView+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Animations.h"; path = "Classes/UIView+Animations.h"; sourceTree = "<group>"; };
 		909756821728699700B6723B /* UIView+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Animations.m"; path = "Classes/UIView+Animations.m"; sourceTree = "<group>"; };
 		90975684172870B200B6723B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -89,6 +92,8 @@
 			children = (
 				909756811728699700B6723B /* UIView+Animations.h */,
 				909756821728699700B6723B /* UIView+Animations.m */,
+				9070C03F172BCF4900FD5EFD /* MSStyleSheet.h */,
+				9070C040172BCF4900FD5EFD /* MSStyleSheet.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 				9097568D1728833400B6723B /* MSProject.m in Sources */,
 				909756901728844500B6723B /* MSProjectCell.m in Sources */,
 				9070C03E172BBBE500FD5EFD /* MSTimelineView.m in Sources */,
+				9070C041172BCF4900FD5EFD /* MSStyleSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

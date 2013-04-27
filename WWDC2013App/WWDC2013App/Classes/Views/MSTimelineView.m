@@ -12,6 +12,8 @@ CGFloat const circleRadius = 7;
 
 @implementation MSTimelineView
 
+#pragma mark - NSObject
+
 - (void)awakeFromNib
 {
     [super awakeFromNib];

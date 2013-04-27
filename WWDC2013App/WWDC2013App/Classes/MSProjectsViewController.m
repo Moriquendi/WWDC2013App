@@ -9,6 +9,7 @@
 #import "MSProjectsViewController.h"
 #import "MSProject.h"
 #import "MSProjectCell.h"
+#import "MSStyleSheet.h"
 
 CGFloat const kProjectCellHeight = 215;
 NSString *const kProjectCellIdentifier = @"kProjectCell";
@@ -40,8 +41,8 @@ UITableViewDelegate>
     [self.projects addObject:farmProject];
 
     // Self config
-    self.view.backgroundColor = [UIColor lightGrayColor];
-    
+    self.view.backgroundColor = [[MSStyleSheet sharedInstance] defaultBackgroundColor];;
+
     // Table view
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [self.view addSubview:self.tableView];
