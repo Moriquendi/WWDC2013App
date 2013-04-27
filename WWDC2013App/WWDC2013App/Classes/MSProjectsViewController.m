@@ -11,7 +11,9 @@
 #import "MSProjectCell.h"
 #import "MSStyleSheet.h"
 
-CGFloat const kProjectCellHeight = 300;
+#import "UIViewController+KNSemiModal.h"
+
+CGFloat const kProjectCellHeight = 200;
 NSString *const kProjectCellIdentifier = @"kProjectCell";
 
 @interface MSProjectsViewController ()
@@ -36,6 +38,7 @@ UITableViewDelegate>
 
     // Self config
     self.view.backgroundColor = [[MSStyleSheet sharedInstance] defaultBackgroundColor];;
+    self.title = @"Projects timeline";
 
     // Table view
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -62,7 +65,6 @@ UITableViewDelegate>
 
     projectCell.projectImage = [UIImage imageNamed:project.imageName];
     projectCell.projectName = project.projectName;
-    projectCell.projectDescription = project.projectDescription;
     return projectCell;
 }
 
@@ -75,8 +77,9 @@ UITableViewDelegate>
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MSProjectCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    
+    UIView *semiView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    semiView.backgroundColor = [UIColor redColor];
+    [self presentSemiView:semiView];
 }
 
 @end

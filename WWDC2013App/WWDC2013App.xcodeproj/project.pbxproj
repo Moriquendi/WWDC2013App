@@ -25,6 +25,7 @@
 		90A59F31172C02C400595B85 /* Base-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F30172C02C400595B85 /* Base-1.png */; };
 		90A59F3C172C10FF00595B85 /* MSNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A59F39172C10FF00595B85 /* MSNavigationBar.m */; };
 		90A59F3D172C10FF00595B85 /* MSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A59F3B172C10FF00595B85 /* MSNavigationController.m */; };
+		90A59F45172C22FA00595B85 /* UIViewController+KNSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A59F44172C22FA00595B85 /* UIViewController+KNSemiModal.m */; };
 		90D70E2417285B2800D7468E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2317285B2800D7468E /* UIKit.framework */; };
 		90D70E2617285B2800D7468E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2517285B2800D7468E /* Foundation.framework */; };
 		90D70E2817285B2800D7468E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2717285B2800D7468E /* CoreGraphics.framework */; };
@@ -65,6 +66,8 @@
 		90A59F39172C10FF00595B85 /* MSNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSNavigationBar.m; path = ../../extern/MSNavigationController/src/MSNavigationBar.m; sourceTree = "<group>"; };
 		90A59F3A172C10FF00595B85 /* MSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSNavigationController.h; path = ../../extern/MSNavigationController/src/MSNavigationController.h; sourceTree = "<group>"; };
 		90A59F3B172C10FF00595B85 /* MSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSNavigationController.m; path = ../../extern/MSNavigationController/src/MSNavigationController.m; sourceTree = "<group>"; };
+		90A59F43172C22FA00595B85 /* UIViewController+KNSemiModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+KNSemiModal.h"; path = "../../extern/SemiModalVC/Source/UIViewController+KNSemiModal.h"; sourceTree = "<group>"; };
+		90A59F44172C22FA00595B85 /* UIViewController+KNSemiModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+KNSemiModal.m"; path = "../../extern/SemiModalVC/Source/UIViewController+KNSemiModal.m"; sourceTree = "<group>"; };
 		90D70E2017285B2800D7468E /* WWDC2013App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC2013App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D70E2317285B2800D7468E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		90D70E2517285B2800D7468E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -176,6 +179,7 @@
 		90A59F36172C102F00595B85 /* submodules */ = {
 			isa = PBXGroup;
 			children = (
+				90A59F46172C22FE00595B85 /* SemiModal */,
 				90A59F37172C103900595B85 /* MSNavigationBar */,
 			);
 			name = submodules;
@@ -190,6 +194,15 @@
 				90A59F3B172C10FF00595B85 /* MSNavigationController.m */,
 			);
 			name = MSNavigationBar;
+			sourceTree = "<group>";
+		};
+		90A59F46172C22FE00595B85 /* SemiModal */ = {
+			isa = PBXGroup;
+			children = (
+				90A59F43172C22FA00595B85 /* UIViewController+KNSemiModal.h */,
+				90A59F44172C22FA00595B85 /* UIViewController+KNSemiModal.m */,
+			);
+			name = SemiModal;
 			sourceTree = "<group>";
 		};
 		90D70E1717285B2800D7468E = {
@@ -338,6 +351,7 @@
 				9070C041172BCF4900FD5EFD /* MSStyleSheet.m in Sources */,
 				90A59F3C172C10FF00595B85 /* MSNavigationBar.m in Sources */,
 				90A59F3D172C10FF00595B85 /* MSNavigationController.m in Sources */,
+				90A59F45172C22FA00595B85 /* UIViewController+KNSemiModal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,3 +1,6 @@
 [submodule "extern/MSNavigationController"]
 	path = extern/MSNavigationController
 	url = git@github.com:Moriquendi/MSNavigationController.git
+[submodule "extern/SemiModalVC"]
+	path = extern/SemiModalVC
+	url = git://github.com/kentnguyen/KNSemiModalViewController.git

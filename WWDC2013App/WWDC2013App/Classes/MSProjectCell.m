@@ -12,8 +12,6 @@
 @interface MSProjectCell ()
 @property (weak, nonatomic) IBOutlet UILabel *projectNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *projectImageView;
-@property (weak, nonatomic) IBOutlet UILabel *projectDescriptionLabel;
-
 @property (weak, nonatomic) IBOutlet UIView *contentBgView;
 
 @end
@@ -34,11 +32,6 @@
     self.projectImageView.image = projectImage;
 }
 
-- (void)setProjectDescription:(NSString *)projectDescription
-{
-    _projectDescription = projectDescription;
-    self.projectDescriptionLabel.text = projectDescription;
-}
 
 #pragma mark - UITableViewCell
 
