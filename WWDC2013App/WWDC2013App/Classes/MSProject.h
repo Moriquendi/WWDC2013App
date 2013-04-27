@@ -10,6 +10,12 @@
 
 @interface MSProject : NSObject
 
-@property (nonatomic, strong) NSString *title;
+@property (nonatomic, readonly, strong) NSString *date;
+@property (nonatomic, readonly, strong) NSString *imageName;
+@property (nonatomic, readonly, strong) NSString *projectDescription;
+@property (nonatomic, readonly, strong) NSString *projectName;
 
++ (NSArray *)loadProjectsFromFile:(NSString *)fileName;
+
+- (id)initWithContentData:(NSDictionary *)data;
 @end

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date</key>
+	<string>2012</string>
+	<key>imageName</key>
+	<string>karatePandaiOS-1</string>
+	<key>projectDescription</key>
+	<string>Karate Panda iOS bla bla desc</string>
+	<key>projectName</key>
+	<string>Karate Panda iOS</string>
+</dict>
+</plist>

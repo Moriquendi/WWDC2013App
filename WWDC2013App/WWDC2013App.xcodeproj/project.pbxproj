@@ -17,6 +17,12 @@
 		9097568D1728833400B6723B /* MSProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9097568C1728833400B6723B /* MSProject.m */; };
 		909756901728844500B6723B /* MSProjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9097568F1728844500B6723B /* MSProjectCell.m */; };
 		909756921728845700B6723B /* MSProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909756911728845700B6723B /* MSProjectCell.xib */; };
+		90A59F27172BF06900595B85 /* Farm2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F25172BF06900595B85 /* Farm2.plist */; };
+		90A59F28172BF06900595B85 /* projectsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F26172BF06900595B85 /* projectsList.plist */; };
+		90A59F2D172BFEFC00595B85 /* BaseCRM.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F2A172BFEFC00595B85 /* BaseCRM.plist */; };
+		90A59F2E172BFEFC00595B85 /* KaratePandaiOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F2B172BFEFC00595B85 /* KaratePandaiOS.plist */; };
+		90A59F2F172BFEFC00595B85 /* KaratePandaPC.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F2C172BFEFC00595B85 /* KaratePandaPC.plist */; };
+		90A59F31172C02C400595B85 /* Base-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F30172C02C400595B85 /* Base-1.png */; };
 		90D70E2417285B2800D7468E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2317285B2800D7468E /* UIKit.framework */; };
 		90D70E2617285B2800D7468E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2517285B2800D7468E /* Foundation.framework */; };
 		90D70E2817285B2800D7468E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2717285B2800D7468E /* CoreGraphics.framework */; };
@@ -47,6 +53,12 @@
 		9097568E1728844500B6723B /* MSProjectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSProjectCell.h; path = Classes/MSProjectCell.h; sourceTree = "<group>"; };
 		9097568F1728844500B6723B /* MSProjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSProjectCell.m; path = Classes/MSProjectCell.m; sourceTree = "<group>"; };
 		909756911728845700B6723B /* MSProjectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSProjectCell.xib; path = Classes/MSProjectCell.xib; sourceTree = "<group>"; };
+		90A59F25172BF06900595B85 /* Farm2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Farm2.plist; path = ModelData/Farm2.plist; sourceTree = "<group>"; };
+		90A59F26172BF06900595B85 /* projectsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = projectsList.plist; path = ModelData/projectsList.plist; sourceTree = "<group>"; };
+		90A59F2A172BFEFC00595B85 /* BaseCRM.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BaseCRM.plist; path = ModelData/BaseCRM.plist; sourceTree = "<group>"; };
+		90A59F2B172BFEFC00595B85 /* KaratePandaiOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = KaratePandaiOS.plist; path = ModelData/KaratePandaiOS.plist; sourceTree = "<group>"; };
+		90A59F2C172BFEFC00595B85 /* KaratePandaPC.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = KaratePandaPC.plist; path = ModelData/KaratePandaPC.plist; sourceTree = "<group>"; };
+		90A59F30172C02C400595B85 /* Base-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Base-1.png"; sourceTree = "<group>"; };
 		90D70E2017285B2800D7468E /* WWDC2013App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC2013App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D70E2317285B2800D7468E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		90D70E2517285B2800D7468E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -127,6 +139,7 @@
 		901F9021172B20FE00954653 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				90A59F30172C02C400595B85 /* Base-1.png */,
 				901F9022172B20FE00954653 /* farm2-1.png */,
 			);
 			name = Projects;
@@ -140,6 +153,18 @@
 				901F9021172B20FE00954653 /* Projects */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		90A59F29172BF06B00595B85 /* ModelData */ = {
+			isa = PBXGroup;
+			children = (
+				90A59F25172BF06900595B85 /* Farm2.plist */,
+				90A59F2A172BFEFC00595B85 /* BaseCRM.plist */,
+				90A59F2B172BFEFC00595B85 /* KaratePandaiOS.plist */,
+				90A59F2C172BFEFC00595B85 /* KaratePandaPC.plist */,
+				90A59F26172BF06900595B85 /* projectsList.plist */,
+			);
+			name = ModelData;
 			sourceTree = "<group>";
 		};
 		90D70E1717285B2800D7468E = {
@@ -187,6 +212,7 @@
 		90D70E2A17285B2800D7468E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				90A59F29172BF06B00595B85 /* ModelData */,
 				9070C044172BDB5300FD5EFD /* Images */,
 				90D70E2B17285B2800D7468E /* WWDC2013App-Info.plist */,
 				90D70E2C17285B2800D7468E /* InfoPlist.strings */,
@@ -259,6 +285,12 @@
 				909756921728845700B6723B /* MSProjectCell.xib in Resources */,
 				901F9023172B20FE00954653 /* farm2-1.png in Resources */,
 				9070C043172BDB5000FD5EFD /* projectBg.png in Resources */,
+				90A59F27172BF06900595B85 /* Farm2.plist in Resources */,
+				90A59F28172BF06900595B85 /* projectsList.plist in Resources */,
+				90A59F2D172BFEFC00595B85 /* BaseCRM.plist in Resources */,
+				90A59F2E172BFEFC00595B85 /* KaratePandaiOS.plist in Resources */,
+				90A59F2F172BFEFC00595B85 /* KaratePandaPC.plist in Resources */,
+				90A59F31172C02C400595B85 /* Base-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

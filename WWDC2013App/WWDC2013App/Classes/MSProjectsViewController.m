@@ -11,14 +11,14 @@
 #import "MSProjectCell.h"
 #import "MSStyleSheet.h"
 
-CGFloat const kProjectCellHeight = 215;
+CGFloat const kProjectCellHeight = 300;
 NSString *const kProjectCellIdentifier = @"kProjectCell";
 
 @interface MSProjectsViewController ()
 <UITableViewDataSource,
 UITableViewDelegate>
 
-@property (nonatomic, strong) NSMutableArray *projects;
+@property (nonatomic, strong) NSArray *projects;
 @property (nonatomic, strong) UITableView *tableView;
 
 @end
@@ -30,15 +30,9 @@ UITableViewDelegate>
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    
-    #warning probably move somewhere else
-    // Model
-    self.projects = [[NSMutableArray alloc] init];
-    // Farm 2 iOS Project
-    MSProject *farmProject = [[MSProject alloc] init];
-    farmProject.title = @"Farm 2";
-    [self.projects addObject:farmProject];
+
+    // Load model
+    self.projects = [MSProject loadProjectsFromFile:@"projectsList"];
 
     // Self config
     self.view.backgroundColor = [[MSStyleSheet sharedInstance] defaultBackgroundColor];;
@@ -63,8 +57,12 @@ UITableViewDelegate>
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    MSProject *project = self.projects[indexPath.row];
     MSProjectCell *projectCell = [tableView dequeueReusableCellWithIdentifier:kProjectCellIdentifier];
-    projectCell.projectImage = [UIImage imageNamed:@"Farm2-1"];
+
+    projectCell.projectImage = [UIImage imageNamed:project.imageName];
+    projectCell.projectName = project.projectName;
+    projectCell.projectDescription = project.projectDescription;
     return projectCell;
 }
 

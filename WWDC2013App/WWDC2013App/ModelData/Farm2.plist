@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date</key>
+	<string>2012</string>
+	<key>imageName</key>
+	<string>farm2-1</string>
+	<key>projectDescription</key>
+	<string>Farm 2 bla bla</string>
+	<key>projectName</key>
+	<string>Farm 2</string>
+</dict>
+</plist>

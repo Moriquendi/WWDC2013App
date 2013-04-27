@@ -12,5 +12,6 @@
 
 @property (nonatomic, strong) NSString *projectName;
 @property (nonatomic, strong) UIImage *projectImage;
+@property (nonatomic, strong) NSString *projectDescription;
 
 @end

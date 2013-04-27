@@ -12,7 +12,9 @@
 @interface MSProjectCell ()
 @property (weak, nonatomic) IBOutlet UILabel *projectNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *projectImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *contentView;
+@property (weak, nonatomic) IBOutlet UILabel *projectDescriptionLabel;
+
+@property (weak, nonatomic) IBOutlet UIView *contentBgView;
 
 @end
 
@@ -32,13 +34,20 @@
     self.projectImageView.image = projectImage;
 }
 
+- (void)setProjectDescription:(NSString *)projectDescription
+{
+    _projectDescription = projectDescription;
+    self.projectDescriptionLabel.text = projectDescription;
+}
+
 #pragma mark - UITableViewCell
 
 - (void)awakeFromNib
 {
     // Background
-    UIImage *bgImage = [[UIImage imageNamed:@"projectBg"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10)];
-    self.contentView.image = bgImage;
+//    UIImage *bgImage = [[UIImage imageNamed:@"projectBg"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10)];
+//    self.contentBgView.backgroundColor = [UIColor colorWithPatternImage:bgImage];
+    self.contentBgView.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.4];
     
     // Fonts
     self.projectNameLabel.font = [[MSStyleSheet sharedInstance] defaultHeaderTextFont];
