@@ -8,24 +8,19 @@
 
 #import "MSImageCollectionViewCell.h"
 
+@interface MSImageCollectionViewCell ()
+@property (weak, nonatomic) IBOutlet UIImageView *cellImageView;
+
+@end
+
 @implementation MSImageCollectionViewCell
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
+#pragma mark - Setters
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void)setImage:(UIImage *)image
 {
-    // Drawing code
+    _image = image;
+    self.cellImageView.image = image;
 }
-*/
 
 @end

@@ -10,4 +10,6 @@
 
 @interface MSImageCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, strong) UIImage *image;
+
 @end
