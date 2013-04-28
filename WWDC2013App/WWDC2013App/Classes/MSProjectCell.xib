@@ -102,9 +102,8 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
 						</array>
-						<string key="NSFrameSize">{320, 207}</string>
+						<string key="NSFrameSize">{320, 230}</string>
 						<reference key="NSSuperview" ref="1024799049"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:11</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -117,7 +116,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</array>
-				<string key="NSFrameSize">{320, 208}</string>
+				<string key="NSFrameSize">{320, 231}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSNextKeyView" ref="381379649"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -128,7 +127,7 @@
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<int key="IBUISelectionStyle">0</int>
 				<reference key="IBUIContentView" ref="381379649"/>
-				<real value="208" key="IBUIRowHeight"/>
+				<real value="231" key="IBUIRowHeight"/>
 			</object>
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -173,7 +172,7 @@
 						<int key="objectID">3</int>
 						<reference key="object" ref="1024799049"/>
 						<array class="NSMutableArray" key="children">
-							<object class="IBNSLayoutConstraint" id="510944949">
+							<object class="IBNSLayoutConstraint" id="827992996">
 								<reference key="firstItem" ref="1024799049"/>
 								<int key="firstAttribute">4</int>
 								<int key="relation">0</int>
@@ -181,7 +180,7 @@
 								<int key="secondAttribute">4</int>
 								<float key="multiplier">1</float>
 								<object class="IBLayoutConstant" key="constant">
-									<double key="value">164</double>
+									<double key="value">187</double>
 								</object>
 								<float key="priority">1000</float>
 								<reference key="containingView" ref="1024799049"/>
@@ -442,14 +441,14 @@
 						<reference key="parent" ref="906714278"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">344</int>
-						<reference key="object" ref="510944949"/>
-						<reference key="parent" ref="1024799049"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">345</int>
 						<reference key="object" ref="673613324"/>
 						<reference key="parent" ref="906714278"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">346</int>
+						<reference key="object" ref="827992996"/>
+						<reference key="parent" ref="1024799049"/>
 					</object>
 				</array>
 			</object>
@@ -471,7 +470,7 @@
 					<reference ref="143696736"/>
 					<reference ref="97925139"/>
 					<reference ref="121933301"/>
-					<reference ref="510944949"/>
+					<reference ref="827992996"/>
 				</array>
 				<string key="318.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="320.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -491,8 +490,8 @@
 				<string key="339.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="340.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="343.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="344.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="345.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="346.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="9.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<boolean value="NO" key="9.IBViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
 			</dictionary>
@@ -500,7 +499,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">345</int>
+			<int key="maxID">346</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>

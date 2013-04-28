@@ -12,6 +12,10 @@
 		9070C043172BDB5000FD5EFD /* projectBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9070C042172BDB5000FD5EFD /* projectBg.png */; };
 		90732007172D021E00DF2524 /* MSImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90732006172D021E00DF2524 /* MSImageCollectionViewCell.xib */; };
 		9073200A172D026500DF2524 /* MSImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90732009172D026500DF2524 /* MSImageCollectionViewCell.m */; };
+		908433FD172D627C000F6B8E /* leap-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 908433FC172D627C000F6B8E /* leap-1.png */; };
+		908433FF172D70E0000F6B8E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908433FE172D70E0000F6B8E /* MediaPlayer.framework */; };
+		90843403172DA7C7000F6B8E /* MSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90843401172DA7C7000F6B8E /* MSMenuViewController.m */; };
+		90843404172DA7C7000F6B8E /* MSMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90843402172DA7C7000F6B8E /* MSMenuViewController.xib */; };
 		909756831728699700B6723B /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756821728699700B6723B /* UIView+Animations.m */; };
 		90975685172870B200B6723B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90975684172870B200B6723B /* QuartzCore.framework */; };
 		9097568A1728823F00B6723B /* MSProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756891728823F00B6723B /* MSProjectsViewController.m */; };
@@ -61,6 +65,11 @@
 		90732006172D021E00DF2524 /* MSImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSImageCollectionViewCell.xib; path = Classes/Views/MSImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		90732008172D026500DF2524 /* MSImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSImageCollectionViewCell.h; path = Classes/Views/MSImageCollectionViewCell.h; sourceTree = "<group>"; };
 		90732009172D026500DF2524 /* MSImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSImageCollectionViewCell.m; path = Classes/Views/MSImageCollectionViewCell.m; sourceTree = "<group>"; };
+		908433FC172D627C000F6B8E /* leap-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leap-1.png"; sourceTree = "<group>"; };
+		908433FE172D70E0000F6B8E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		90843400172DA7C7000F6B8E /* MSMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMenuViewController.h; path = Classes/ViewControllers/MSMenuViewController.h; sourceTree = "<group>"; };
+		90843401172DA7C7000F6B8E /* MSMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMenuViewController.m; path = Classes/ViewControllers/MSMenuViewController.m; sourceTree = "<group>"; };
+		90843402172DA7C7000F6B8E /* MSMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSMenuViewController.xib; path = Classes/ViewControllers/MSMenuViewController.xib; sourceTree = "<group>"; };
 		909756811728699700B6723B /* UIView+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Animations.h"; path = "Classes/UIView+Animations.h"; sourceTree = "<group>"; };
 		909756821728699700B6723B /* UIView+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Animations.m"; path = "Classes/UIView+Animations.m"; sourceTree = "<group>"; };
 		90975684172870B200B6723B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -120,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				908433FF172D70E0000F6B8E /* MediaPlayer.framework in Frameworks */,
 				90975685172870B200B6723B /* QuartzCore.framework in Frameworks */,
 				90D70E2417285B2800D7468E /* UIKit.framework in Frameworks */,
 				90D70E2617285B2800D7468E /* Foundation.framework in Frameworks */,
@@ -160,6 +170,9 @@
 				90D70E3C17285B2800D7468E /* MSViewController.m */,
 				909756881728823F00B6723B /* MSProjectsViewController.h */,
 				909756891728823F00B6723B /* MSProjectsViewController.m */,
+				90843400172DA7C7000F6B8E /* MSMenuViewController.h */,
+				90843401172DA7C7000F6B8E /* MSMenuViewController.m */,
+				90843402172DA7C7000F6B8E /* MSMenuViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -190,6 +203,7 @@
 				90A59F52172C6DB700595B85 /* krakjam-1.png */,
 				90A59F30172C02C400595B85 /* Base-1.png */,
 				901F9022172B20FE00954653 /* farm2-1.png */,
+				908433FC172D627C000F6B8E /* leap-1.png */,
 			);
 			name = Projects;
 			path = Images/Projects;
@@ -269,6 +283,7 @@
 		90D70E2217285B2800D7468E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				908433FE172D70E0000F6B8E /* MediaPlayer.framework */,
 				90975684172870B200B6723B /* QuartzCore.framework */,
 				90D70E2317285B2800D7468E /* UIKit.framework */,
 				90D70E2517285B2800D7468E /* Foundation.framework */,
@@ -387,6 +402,8 @@
 				90A59F60172C7ABF00595B85 /* CocoaCamp.plist in Resources */,
 				90A59F61172C7ABF00595B85 /* LeapMotion.plist in Resources */,
 				90732007172D021E00DF2524 /* MSImageCollectionViewCell.xib in Resources */,
+				908433FD172D627C000F6B8E /* leap-1.png in Resources */,
+				90843404172DA7C7000F6B8E /* MSMenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +427,7 @@
 				90A59F45172C22FA00595B85 /* UIViewController+KNSemiModal.m in Sources */,
 				90A59F4A172C25AC00595B85 /* MSProjectDetailsViewController.m in Sources */,
 				9073200A172D026500DF2524 /* MSImageCollectionViewCell.m in Sources */,
+				90843403172DA7C7000F6B8E /* MSMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

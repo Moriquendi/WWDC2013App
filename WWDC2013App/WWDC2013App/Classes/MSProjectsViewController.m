@@ -13,7 +13,7 @@
 #import "UIViewController+KNSemiModal.h"
 #import "MSProjectDetailsViewController.h"
 
-CGFloat const kProjectCellHeight = 200;
+CGFloat const kProjectCellHeight = 230;
 NSString *const kProjectCellIdentifier = @"kProjectCell";
 
 @interface MSProjectsViewController ()
@@ -50,6 +50,14 @@ UITableViewDelegate>
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+}
+
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    self.tableView.frame = CGRectMake(0, 0,
+                                      self.view.frame.size.width,
+                                      self.view.frame.size.height);
 }
 
 #pragma mark - <UITableViewDataSource>
