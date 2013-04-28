@@ -23,8 +23,10 @@
 - (UIFont *)defaultTextFont;
 - (UIFont *)defaultBoldTextFont;
 - (UIFont *)defaultHeaderTextFont;
+- (UIFont *)defaultH2TextFont;
 
 // Fonts colors
 - (UIColor *)darkTextColor;
+- (UIColor *)lightTextColor;
 
 @end

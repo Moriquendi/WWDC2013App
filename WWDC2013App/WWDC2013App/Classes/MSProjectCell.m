@@ -8,6 +8,7 @@
 
 #import "MSProjectCell.h"
 #import "MSStyleSheet.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface MSProjectCell ()
 @property (weak, nonatomic) IBOutlet UILabel *projectNameLabel;
@@ -43,8 +44,15 @@
     self.contentBgView.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.4];
     
     // Fonts
-    self.projectNameLabel.font = [[MSStyleSheet sharedInstance] defaultBoldTextFont];
-    self.projectNameLabel.textColor = [[MSStyleSheet sharedInstance] darkTextColor];
+    self.projectNameLabel.font = [[MSStyleSheet sharedInstance] defaultH2TextFont];
+    self.projectNameLabel.textColor = [[MSStyleSheet sharedInstance] lightTextColor];
+
+    self.projectImageView.layer.borderWidth = 2;
+    self.projectImageView.layer.borderColor = [[UIColor colorWithRed:146.f/255.f
+                                                               green:138.f/255.f
+                                                                blue:127.f/255.f
+                                                               alpha:1.0] CGColor];
+    self.projectImageView.layer.cornerRadius = 4.f;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

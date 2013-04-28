@@ -7,12 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MSTimelineView.h"
 
 @interface MSProjectCell : UITableViewCell
 
 @property (nonatomic, strong) NSString *projectName;
 @property (nonatomic, strong) UIImage *projectImage;
-@property (nonatomic, weak) IBOutlet MSTimelineView *timelineView;
 
 @end

@@ -42,7 +42,10 @@
 
 - (UIColor *)defaultBackgroundColor
 {
-    return [UIColor colorWithWhite:240.f/255.f alpha:1.0];
+    return [UIColor colorWithRed:250.f/255.f
+                           green:241.f/255.f
+                            blue:232.f/255.f
+                           alpha:1.0];
 }
 
 #pragma mark - Fonts
@@ -62,11 +65,21 @@
     return [UIFont fontWithName:@"Cochin-Bold" size:20.0];
 }
 
+- (UIFont *)defaultH2TextFont
+{
+    return [UIFont fontWithName:@"Cochin-Bold" size:17.0];
+}
+
 #pragma mark - Fonts colors
 
 - (UIColor *)darkTextColor
 {
     return [UIColor blackColor];
+}
+
+- (UIColor *)lightTextColor
+{
+    return [UIColor whiteColor];
 }
 
 @end

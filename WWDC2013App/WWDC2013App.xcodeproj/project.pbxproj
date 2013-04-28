@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		901F9023172B20FE00954653 /* farm2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 901F9022172B20FE00954653 /* farm2-1.png */; };
-		9070C03E172BBBE500FD5EFD /* MSTimelineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9070C03D172BBBE500FD5EFD /* MSTimelineView.m */; };
 		9070C041172BCF4900FD5EFD /* MSStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9070C040172BCF4900FD5EFD /* MSStyleSheet.m */; };
 		9070C043172BDB5000FD5EFD /* projectBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9070C042172BDB5000FD5EFD /* projectBg.png */; };
 		90732007172D021E00DF2524 /* MSImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90732006172D021E00DF2524 /* MSImageCollectionViewCell.xib */; };
@@ -56,8 +55,6 @@
 
 /* Begin PBXFileReference section */
 		901F9022172B20FE00954653 /* farm2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "farm2-1.png"; sourceTree = "<group>"; };
-		9070C03C172BBBE500FD5EFD /* MSTimelineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSTimelineView.h; path = Classes/Views/MSTimelineView.h; sourceTree = "<group>"; };
-		9070C03D172BBBE500FD5EFD /* MSTimelineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSTimelineView.m; path = Classes/Views/MSTimelineView.m; sourceTree = "<group>"; };
 		9070C03F172BCF4900FD5EFD /* MSStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSStyleSheet.h; path = Classes/Utils/MSStyleSheet.h; sourceTree = "<group>"; };
 		9070C040172BCF4900FD5EFD /* MSStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSStyleSheet.m; path = Classes/Utils/MSStyleSheet.m; sourceTree = "<group>"; };
 		9070C042172BDB5000FD5EFD /* projectBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = projectBg.png; path = Images/projectBg.png; sourceTree = "<group>"; };
@@ -173,8 +170,6 @@
 				9097568E1728844500B6723B /* MSProjectCell.h */,
 				9097568F1728844500B6723B /* MSProjectCell.m */,
 				909756911728845700B6723B /* MSProjectCell.xib */,
-				9070C03C172BBBE500FD5EFD /* MSTimelineView.h */,
-				9070C03D172BBBE500FD5EFD /* MSTimelineView.m */,
 				90D70E3E17285B2800D7468E /* MSViewController.xib */,
 				90732006172D021E00DF2524 /* MSImageCollectionViewCell.xib */,
 				90732008172D026500DF2524 /* MSImageCollectionViewCell.h */,
@@ -409,7 +404,6 @@
 				9097568A1728823F00B6723B /* MSProjectsViewController.m in Sources */,
 				9097568D1728833400B6723B /* MSProject.m in Sources */,
 				909756901728844500B6723B /* MSProjectCell.m in Sources */,
-				9070C03E172BBBE500FD5EFD /* MSTimelineView.m in Sources */,
 				9070C041172BCF4900FD5EFD /* MSStyleSheet.m in Sources */,
 				90A59F3C172C10FF00595B85 /* MSNavigationBar.m in Sources */,
 				90A59F3D172C10FF00595B85 /* MSNavigationController.m in Sources */,

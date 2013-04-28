@@ -38,6 +38,7 @@ NSString *const kImageCollectionViewCell = @"icv";
 {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [[MSStyleSheet sharedInstance] defaultBackgroundColor];
     self.titleLabel.font = [[MSStyleSheet sharedInstance] defaultHeaderTextFont];
     self.description.font = [[MSStyleSheet sharedInstance] defaultTextFont];
     self.titleLabel.text = self.projectDetails.projectName;

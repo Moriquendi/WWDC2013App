@@ -82,19 +82,4 @@ UITableViewDelegate>
     [self presentSemiViewController:projectDetailsVC];
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    NSArray *centerCellsIndexPaths = [self.tableView indexPathsForRowsInRect:CGRectMake(0, scrollView.contentOffset.y + self.tableView.bounds.size.height/2.f,
-                                                                                       self.tableView.bounds.size.width, 1)];
-    
-    self.highlightedCell.timelineView.highlighted = NO;
-    
-    if ([centerCellsIndexPaths count] >= 1) {
-        MSProjectCell *cell = (MSProjectCell *)[self.tableView cellForRowAtIndexPath:centerCellsIndexPaths[0]];
-        self.highlightedCell = cell;
-        cell.timelineView.highlighted = YES;
-    }
-    
-}
-
 @end
