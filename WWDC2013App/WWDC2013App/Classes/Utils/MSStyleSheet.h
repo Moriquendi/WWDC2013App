@@ -20,6 +20,8 @@
 - (UIColor *)defaultBackgroundColor;
 
 // Fonts
+- (UIFont *)defaultTextFont;
+- (UIFont *)defaultBoldTextFont;
 - (UIFont *)defaultHeaderTextFont;
 
 // Fonts colors

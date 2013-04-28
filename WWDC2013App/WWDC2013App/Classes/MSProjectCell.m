@@ -43,7 +43,7 @@
     self.contentBgView.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.4];
     
     // Fonts
-    self.projectNameLabel.font = [[MSStyleSheet sharedInstance] defaultHeaderTextFont];
+    self.projectNameLabel.font = [[MSStyleSheet sharedInstance] defaultBoldTextFont];
     self.projectNameLabel.textColor = [[MSStyleSheet sharedInstance] darkTextColor];
 }
 

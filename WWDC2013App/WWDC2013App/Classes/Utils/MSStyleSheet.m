@@ -34,7 +34,7 @@
 
 - (void)_configureAppearanceProxies
 {
-    [[UINavigationBar appearance] setTitleTextAttributes:@{UITextAttributeTextColor : [UIColor darkGrayColor],
+    [[UINavigationBar appearance] setTitleTextAttributes:@{UITextAttributeTextColor : [UIColor blackColor],
                         UITextAttributeTextShadowOffset : [NSValue valueWithCGPoint:CGPointMake(0, 0)]}];
 }
 
@@ -47,9 +47,19 @@
 
 #pragma mark - Fonts
 
+- (UIFont *)defaultTextFont
+{
+    return [UIFont fontWithName:@"Cochin" size:14.0];
+}
+
+- (UIFont *)defaultBoldTextFont
+{
+    return [UIFont fontWithName:@"Cochin-Bold" size:14.0];
+}
+
 - (UIFont *)defaultHeaderTextFont
 {
-    return [UIFont fontWithName:@"Optima-Bold" size:20.0];
+    return [UIFont fontWithName:@"Cochin-Bold" size:20.0];
 }
 
 #pragma mark - Fonts colors
