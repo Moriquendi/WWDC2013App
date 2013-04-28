@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>date</key>
-	<string>2011</string>
+	<string>2009</string>
 	<key>imageNames</key>
 	<array>
 		<string>karatePandaPC-1</string>
@@ -12,7 +12,7 @@
 	<key>movie</key>
 	<string>KaratePandaTrailer</string>
 	<key>projectDescription</key>
-	<string>Karate Panda bla bla desc</string>
+	<string>Karate Panda game is my first graphical project developed while I was 16. It&apos;s also my first game which was published by Play in four Europe&apos;s countries. I finished it after one year and every day my passion to programming grew more and more.</string>
 	<key>projectName</key>
 	<string>Karate Panda</string>
 </dict>
