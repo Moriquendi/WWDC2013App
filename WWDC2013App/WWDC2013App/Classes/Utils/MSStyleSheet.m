@@ -34,8 +34,32 @@
 
 - (void)_configureAppearanceProxies
 {
+    // Navigation bar
     [[UINavigationBar appearance] setTitleTextAttributes:@{UITextAttributeTextColor : [UIColor blackColor],
-                        UITextAttributeTextShadowOffset : [NSValue valueWithCGPoint:CGPointMake(0, 0)]}];
+                        UITextAttributeTextShadowOffset : [NSValue valueWithCGPoint:CGPointMake(0, 0)],
+                                    UITextAttributeFont : [UIFont fontWithName:@"Cochin-Bold" size:20.0]}];
+    
+    
+    // Back buttons
+    UIEdgeInsets backButImageInsets = UIEdgeInsetsMake(0, 15, 0, 6);
+    UIImage *backButBgSelected = [[UIImage imageNamed:@"backButPressed"] resizableImageWithCapInsets:backButImageInsets];
+    UIImage *backButBg = [[UIImage imageNamed:@"backBut"] resizableImageWithCapInsets:backButImageInsets];
+    
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButBg
+                                                      forState:UIControlStateNormal
+                                                    barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButBgSelected
+                                                      forState:UIControlStateHighlighted
+                                                    barMetrics:UIBarMetricsDefault];
+    
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{UITextAttributeTextColor: [UIColor blackColor],
+                         UITextAttributeTextShadowColor : [UIColor clearColor],
+                                    UITextAttributeFont : [UIFont fontWithName:@"Cochin-Bold" size:11.0]}
+                                                forState:UIControlStateNormal];
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{UITextAttributeTextColor: [UIColor blackColor],
+                         UITextAttributeTextShadowColor : [UIColor clearColor],
+                                    UITextAttributeFont : [UIFont fontWithName:@"Cochin-Bold" size:11.0]}
+                                                forState:UIControlStateHighlighted];
 }
 
 #pragma mark - Colors

@@ -16,6 +16,21 @@
 		908433FF172D70E0000F6B8E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908433FE172D70E0000F6B8E /* MediaPlayer.framework */; };
 		90843403172DA7C7000F6B8E /* MSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90843401172DA7C7000F6B8E /* MSMenuViewController.m */; };
 		90843404172DA7C7000F6B8E /* MSMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90843402172DA7C7000F6B8E /* MSMenuViewController.xib */; };
+		90843407172DBF83000F6B8E /* MSMenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90843406172DBF83000F6B8E /* MSMenuCollectionViewCell.m */; };
+		90843409172DBFAA000F6B8E /* MSMenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90843408172DBFAA000F6B8E /* MSMenuCollectionViewCell.xib */; };
+		9084340D172DC271000F6B8E /* bgmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 9084340C172DC271000F6B8E /* bgmenu.png */; };
+		9084341B172E9351000F6B8E /* iconSchool.png in Resources */ = {isa = PBXBuildFile; fileRef = 9084341A172E9351000F6B8E /* iconSchool.png */; };
+		9084341F172E9F81000F6B8E /* iconLearn.png in Resources */ = {isa = PBXBuildFile; fileRef = 9084341C172E9F81000F6B8E /* iconLearn.png */; };
+		90843420172E9F81000F6B8E /* iconProject.png in Resources */ = {isa = PBXBuildFile; fileRef = 9084341D172E9F81000F6B8E /* iconProject.png */; };
+		9084342A172EC356000F6B8E /* backBut@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90843428172EC356000F6B8E /* backBut@2x.png */; };
+		9084342B172EC356000F6B8E /* backButPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90843429172EC356000F6B8E /* backButPressed@2x.png */; };
+		9084342F172ED995000F6B8E /* MSWorkSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9084342D172ED995000F6B8E /* MSWorkSchoolViewController.m */; };
+		90843430172ED995000F6B8E /* MSWorkSchoolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9084342E172ED995000F6B8E /* MSWorkSchoolViewController.xib */; };
+		90843432172EDED2000F6B8E /* MSDescriptionImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90843431172EDED2000F6B8E /* MSDescriptionImageView.xib */; };
+		90843435172EDF8D000F6B8E /* MSDescriptionImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90843434172EDF8D000F6B8E /* MSDescriptionImageView.m */; };
+		90843439172EF39E000F6B8E /* insideAGH.png in Resources */ = {isa = PBXBuildFile; fileRef = 90843438172EF39E000F6B8E /* insideAGH.png */; };
+		9084343D172F0C5C000F6B8E /* aghnoc.png in Resources */ = {isa = PBXBuildFile; fileRef = 9084343C172F0C5C000F6B8E /* aghnoc.png */; };
+		9084343F172F0C8D000F6B8E /* aghfront.png in Resources */ = {isa = PBXBuildFile; fileRef = 9084343E172F0C8D000F6B8E /* aghfront.png */; };
 		909756831728699700B6723B /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756821728699700B6723B /* UIView+Animations.m */; };
 		90975685172870B200B6723B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90975684172870B200B6723B /* QuartzCore.framework */; };
 		9097568A1728823F00B6723B /* MSProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756891728823F00B6723B /* MSProjectsViewController.m */; };
@@ -70,6 +85,24 @@
 		90843400172DA7C7000F6B8E /* MSMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMenuViewController.h; path = Classes/ViewControllers/MSMenuViewController.h; sourceTree = "<group>"; };
 		90843401172DA7C7000F6B8E /* MSMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMenuViewController.m; path = Classes/ViewControllers/MSMenuViewController.m; sourceTree = "<group>"; };
 		90843402172DA7C7000F6B8E /* MSMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSMenuViewController.xib; path = Classes/ViewControllers/MSMenuViewController.xib; sourceTree = "<group>"; };
+		90843405172DBF83000F6B8E /* MSMenuCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMenuCollectionViewCell.h; path = Classes/Views/MSMenuCollectionViewCell.h; sourceTree = "<group>"; };
+		90843406172DBF83000F6B8E /* MSMenuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMenuCollectionViewCell.m; path = Classes/Views/MSMenuCollectionViewCell.m; sourceTree = "<group>"; };
+		90843408172DBFAA000F6B8E /* MSMenuCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSMenuCollectionViewCell.xib; path = Classes/Views/MSMenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		9084340C172DC271000F6B8E /* bgmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgmenu.png; path = WWDC2013App/Images/bgmenu.png; sourceTree = SOURCE_ROOT; };
+		9084341A172E9351000F6B8E /* iconSchool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconSchool.png; path = WWDC2013App/Images/iconSchool.png; sourceTree = SOURCE_ROOT; };
+		9084341C172E9F81000F6B8E /* iconLearn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconLearn.png; path = WWDC2013App/Images/iconLearn.png; sourceTree = SOURCE_ROOT; };
+		9084341D172E9F81000F6B8E /* iconProject.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconProject.png; path = WWDC2013App/Images/iconProject.png; sourceTree = SOURCE_ROOT; };
+		90843428172EC356000F6B8E /* backBut@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backBut@2x.png"; path = "WWDC2013App/Images/backBut@2x.png"; sourceTree = SOURCE_ROOT; };
+		90843429172EC356000F6B8E /* backButPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backButPressed@2x.png"; path = "WWDC2013App/Images/backButPressed@2x.png"; sourceTree = SOURCE_ROOT; };
+		9084342C172ED995000F6B8E /* MSWorkSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSWorkSchoolViewController.h; path = Classes/ViewControllers/MSWorkSchoolViewController.h; sourceTree = "<group>"; };
+		9084342D172ED995000F6B8E /* MSWorkSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSWorkSchoolViewController.m; path = Classes/ViewControllers/MSWorkSchoolViewController.m; sourceTree = "<group>"; };
+		9084342E172ED995000F6B8E /* MSWorkSchoolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSWorkSchoolViewController.xib; path = Classes/ViewControllers/MSWorkSchoolViewController.xib; sourceTree = "<group>"; };
+		90843431172EDED2000F6B8E /* MSDescriptionImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSDescriptionImageView.xib; path = Classes/Views/MSDescriptionImageView.xib; sourceTree = "<group>"; };
+		90843433172EDF8D000F6B8E /* MSDescriptionImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSDescriptionImageView.h; path = Classes/Views/MSDescriptionImageView.h; sourceTree = "<group>"; };
+		90843434172EDF8D000F6B8E /* MSDescriptionImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSDescriptionImageView.m; path = Classes/Views/MSDescriptionImageView.m; sourceTree = "<group>"; };
+		90843438172EF39E000F6B8E /* insideAGH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = insideAGH.png; path = Images/insideAGH.png; sourceTree = "<group>"; };
+		9084343C172F0C5C000F6B8E /* aghnoc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aghnoc.png; path = Images/aghnoc.png; sourceTree = "<group>"; };
+		9084343E172F0C8D000F6B8E /* aghfront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aghfront.png; path = Images/aghfront.png; sourceTree = "<group>"; };
 		909756811728699700B6723B /* UIView+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Animations.h"; path = "Classes/UIView+Animations.h"; sourceTree = "<group>"; };
 		909756821728699700B6723B /* UIView+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Animations.m"; path = "Classes/UIView+Animations.m"; sourceTree = "<group>"; };
 		90975684172870B200B6723B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -170,6 +203,9 @@
 				90D70E3C17285B2800D7468E /* MSViewController.m */,
 				909756881728823F00B6723B /* MSProjectsViewController.h */,
 				909756891728823F00B6723B /* MSProjectsViewController.m */,
+				9084342C172ED995000F6B8E /* MSWorkSchoolViewController.h */,
+				9084342D172ED995000F6B8E /* MSWorkSchoolViewController.m */,
+				9084342E172ED995000F6B8E /* MSWorkSchoolViewController.xib */,
 				90843400172DA7C7000F6B8E /* MSMenuViewController.h */,
 				90843401172DA7C7000F6B8E /* MSMenuViewController.m */,
 				90843402172DA7C7000F6B8E /* MSMenuViewController.xib */,
@@ -187,6 +223,12 @@
 				90732006172D021E00DF2524 /* MSImageCollectionViewCell.xib */,
 				90732008172D026500DF2524 /* MSImageCollectionViewCell.h */,
 				90732009172D026500DF2524 /* MSImageCollectionViewCell.m */,
+				90843405172DBF83000F6B8E /* MSMenuCollectionViewCell.h */,
+				90843406172DBF83000F6B8E /* MSMenuCollectionViewCell.m */,
+				90843408172DBFAA000F6B8E /* MSMenuCollectionViewCell.xib */,
+				90843431172EDED2000F6B8E /* MSDescriptionImageView.xib */,
+				90843433172EDF8D000F6B8E /* MSDescriptionImageView.h */,
+				90843434172EDF8D000F6B8E /* MSDescriptionImageView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -194,6 +236,12 @@
 		901F9021172B20FE00954653 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				90843428172EC356000F6B8E /* backBut@2x.png */,
+				90843429172EC356000F6B8E /* backButPressed@2x.png */,
+				9084341C172E9F81000F6B8E /* iconLearn.png */,
+				9084341D172E9F81000F6B8E /* iconProject.png */,
+				9084341A172E9351000F6B8E /* iconSchool.png */,
+				9084340C172DC271000F6B8E /* bgmenu.png */,
 				90A59F4C172C6DB700595B85 /* burglars-1.png */,
 				90A59F4D172C6DB700595B85 /* KaratePandaTrailer.mp4 */,
 				90A59F4E172C6DB700595B85 /* karatePandaiOS-1.png */,
@@ -212,6 +260,9 @@
 		9070C044172BDB5300FD5EFD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9084343E172F0C8D000F6B8E /* aghfront.png */,
+				9084343C172F0C5C000F6B8E /* aghnoc.png */,
+				90843438172EF39E000F6B8E /* insideAGH.png */,
 				9070C042172BDB5000FD5EFD /* projectBg.png */,
 				901F9021172B20FE00954653 /* Projects */,
 			);
@@ -404,6 +455,18 @@
 				90732007172D021E00DF2524 /* MSImageCollectionViewCell.xib in Resources */,
 				908433FD172D627C000F6B8E /* leap-1.png in Resources */,
 				90843404172DA7C7000F6B8E /* MSMenuViewController.xib in Resources */,
+				90843409172DBFAA000F6B8E /* MSMenuCollectionViewCell.xib in Resources */,
+				9084340D172DC271000F6B8E /* bgmenu.png in Resources */,
+				9084341B172E9351000F6B8E /* iconSchool.png in Resources */,
+				9084341F172E9F81000F6B8E /* iconLearn.png in Resources */,
+				90843420172E9F81000F6B8E /* iconProject.png in Resources */,
+				9084342A172EC356000F6B8E /* backBut@2x.png in Resources */,
+				9084342B172EC356000F6B8E /* backButPressed@2x.png in Resources */,
+				90843430172ED995000F6B8E /* MSWorkSchoolViewController.xib in Resources */,
+				90843432172EDED2000F6B8E /* MSDescriptionImageView.xib in Resources */,
+				90843439172EF39E000F6B8E /* insideAGH.png in Resources */,
+				9084343D172F0C5C000F6B8E /* aghnoc.png in Resources */,
+				9084343F172F0C8D000F6B8E /* aghfront.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +491,9 @@
 				90A59F4A172C25AC00595B85 /* MSProjectDetailsViewController.m in Sources */,
 				9073200A172D026500DF2524 /* MSImageCollectionViewCell.m in Sources */,
 				90843403172DA7C7000F6B8E /* MSMenuViewController.m in Sources */,
+				90843407172DBF83000F6B8E /* MSMenuCollectionViewCell.m in Sources */,
+				9084342F172ED995000F6B8E /* MSWorkSchoolViewController.m in Sources */,
+				90843435172EDF8D000F6B8E /* MSDescriptionImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

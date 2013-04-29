@@ -10,6 +10,7 @@
 
 #import "MSViewController.h"
 #import "MSProjectsViewController.h"
+#import "MSMenuViewController.h"
 #import "MSNavigationController.h"
 
 @implementation MSAppDelegate
@@ -19,8 +20,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    //self.viewController = [[MSViewController alloc] initWithNibName:@"MSViewController" bundle:nil];
-    self.viewController = [[MSProjectsViewController alloc] init];
+
+    self.viewController = [[MSMenuViewController alloc] init];
+    // [[MSProjectsViewController alloc] init];
     MSNavigationController *navController = [[MSNavigationController alloc] initWithRootViewController:self.viewController];
     self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];

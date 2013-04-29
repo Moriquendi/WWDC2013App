@@ -39,7 +39,7 @@ UITableViewDelegate>
 
     // Self config
     self.view.backgroundColor = [[MSStyleSheet sharedInstance] defaultBackgroundColor];;
-    self.title = @"Projects timeline";
+    self.title = @"Projects";
 
     // Table view
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
