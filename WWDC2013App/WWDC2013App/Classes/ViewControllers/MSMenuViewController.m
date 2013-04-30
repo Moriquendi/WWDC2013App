@@ -31,7 +31,7 @@ UICollectionViewDataSource>
 
     self.title = @"Who am I?";
 
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bgmenu"]];
+    self.view.backgroundColor = [UIColor clearColor];
 //    self.view.backgroundColor = [UIColor colorWithWhite:64.f/255.f alpha:1.0];
     
     self.collectionView.backgroundColor = [UIColor clearColor];

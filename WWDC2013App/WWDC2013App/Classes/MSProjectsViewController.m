@@ -13,7 +13,7 @@
 #import "UIViewController+KNSemiModal.h"
 #import "MSProjectDetailsViewController.h"
 
-CGFloat const kProjectCellHeight = 230;
+CGFloat const kProjectCellHeight = 228;
 NSString *const kProjectCellIdentifier = @"kProjectCell";
 
 @interface MSProjectsViewController ()
@@ -38,7 +38,10 @@ UITableViewDelegate>
     self.projects = [MSProject loadProjectsFromFile:@"projectsList"];
 
     // Self config
-    self.view.backgroundColor = [[MSStyleSheet sharedInstance] defaultBackgroundColor];;
+    // Use bgView instead of background color. BGColors causes problems in semi modal views. To be fixed.
+    UIImageView *bgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    bgView.image = [UIImage imageNamed:@"bgmenu"];
+    [self.view insertSubview:bgView atIndex:0];
     self.title = @"Projects";
 
     // Table view
@@ -50,6 +53,8 @@ UITableViewDelegate>
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.contentInset = UIEdgeInsetsMake(self.navigationController.navigationBar.frame.size.height, 0, 0, 0);
+    self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(self.navigationController.navigationBar.frame.size.height, 0, 0, 0);
 }
 
 - (void)viewWillLayoutSubviews

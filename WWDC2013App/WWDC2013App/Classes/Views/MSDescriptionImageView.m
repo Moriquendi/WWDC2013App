@@ -42,7 +42,10 @@
     
     self.backView.alpha = 0.0;
     [self addSubview:self.backView];
-    self.backView.frame = CGRectMake(0, 0, self.backView.frame.size.width, self.frame.size.height);
+    self.backView.frame = CGRectMake(0,
+                                     0,//self.frame.size.height - self.backView.frame.size.height/2.f,
+                                     self.frame.size.width,//self.backView.frame.size.width,
+                                     self.frame.size.height-self.frame.origin.y);
     [UIView animateWithDuration:3.0
                           delay:0.0
                         options:UIViewAnimationOptionCurveEaseIn
@@ -72,7 +75,7 @@
         self.currentImageIndex = 0;
     }
     self.backView = self.imagesViews[self.currentImageIndex];
-    self.backView.contentMode = UIViewContentModeScaleAspectFill;
+    self.backView.contentMode = UIViewContentModeScaleAspectFit;// UIViewContentModeScaleAspectFill;
     
     [self performTransition:UIViewAnimationOptionTransitionCrossDissolve];
 }

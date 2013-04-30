@@ -12,6 +12,7 @@
 #import "MSProjectsViewController.h"
 #import "MSMenuViewController.h"
 #import "MSNavigationController.h"
+#import "MSNavigationBar.h"
 
 @implementation MSAppDelegate
 
@@ -23,7 +24,15 @@
 
     self.viewController = [[MSMenuViewController alloc] init];
     // [[MSProjectsViewController alloc] init];
-    MSNavigationController *navController = [[MSNavigationController alloc] initWithRootViewController:self.viewController];
+//    MSNavigationController *navController = [[MSNavigationController alloc] initWithRootViewController:self.viewController];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithNavigationBarClass:[MSNavigationBar class] toolbarClass:nil];
+    navController.viewControllers = @[self.viewController];
+    
+    [navController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
+    self.window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bgmenu"]];
+//    navController.navigationBar.opaque =NO;
+    
     self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;

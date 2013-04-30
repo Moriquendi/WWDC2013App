@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define MS_THUMB_SIZE   44.0f
+
 @interface MSStyleSheet : NSObject
 
 /**

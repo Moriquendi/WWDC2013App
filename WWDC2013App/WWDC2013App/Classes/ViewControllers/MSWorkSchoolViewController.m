@@ -10,7 +10,6 @@
 #import "MSDescriptionImageView.h"
 
 @interface MSWorkSchoolViewController ()
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -27,8 +26,10 @@
     UIImageView *view2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"aghfront"]];
     UIImageView *view3 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"aghnoc"]];
     imageView.imagesViews = @[view1, view2, view3];
-    [self.scrollView addSubview:imageView];
+    [self.view addSubview:imageView];
 
+    self.view.backgroundColor = [UIColor blackColor];
+    
     [imageView startAnimation];
 }
 
