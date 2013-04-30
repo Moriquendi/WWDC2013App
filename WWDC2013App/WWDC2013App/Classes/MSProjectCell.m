@@ -37,22 +37,18 @@
 #pragma mark - UITableViewCell
 
 - (void)awakeFromNib
-{
-    // Background
-//    UIImage *bgImage = [[UIImage imageNamed:@"projectBg"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10)];
-//    self.contentBgView.backgroundColor = [UIColor colorWithPatternImage:bgImage];
-    self.contentBgView.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.4];
-    
+{    
     // Fonts
     self.projectNameLabel.font = [[MSStyleSheet sharedInstance] defaultH2TextFont];
     self.projectNameLabel.textColor = [[MSStyleSheet sharedInstance] lightTextColor];
 
-    self.projectImageView.layer.borderWidth = 2;
-    self.projectImageView.layer.borderColor = [[UIColor colorWithRed:146.f/255.f
-                                                               green:138.f/255.f
-                                                                blue:127.f/255.f
-                                                               alpha:1.0] CGColor];
+    self.projectImageView.layer.borderWidth = 1;
+    self.projectImageView.layer.borderColor = [[UIColor whiteColor] CGColor];
     self.projectImageView.layer.cornerRadius = 4.f;
+    
+    self.contentBgView.layer.shadowColor = [[UIColor blackColor] CGColor];
+    self.contentBgView.layer.shadowRadius = 6.0;
+    self.contentBgView.layer.shadowOpacity = 0.6;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
