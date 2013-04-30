@@ -9,7 +9,7 @@
 #import "MSMenuViewController.h"
 #import "MSMenuCollectionViewCell.h"
 #import "MSProjectsViewController.h"
-#import "MSWorkSchoolViewController.h"
+#import "MSWorkSchoolPageViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 NSString *const kMenuCellIdentifier = @"mci";
@@ -129,7 +129,7 @@ UICollectionViewDataSource>
             break;
         case 1:
             [self performSelector:@selector(pushViewController:)
-                       withObject:[[MSWorkSchoolViewController alloc] init]
+                       withObject:[[MSWorkSchoolPageViewController alloc] init]
                        afterDelay:0.5];
             break;
         default:

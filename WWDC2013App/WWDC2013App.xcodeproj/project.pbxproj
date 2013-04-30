@@ -25,12 +25,15 @@
 		9084342A172EC356000F6B8E /* backBut@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90843428172EC356000F6B8E /* backBut@2x.png */; };
 		9084342B172EC356000F6B8E /* backButPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90843429172EC356000F6B8E /* backButPressed@2x.png */; };
 		9084342F172ED995000F6B8E /* MSWorkSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9084342D172ED995000F6B8E /* MSWorkSchoolViewController.m */; };
-		90843430172ED995000F6B8E /* MSWorkSchoolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9084342E172ED995000F6B8E /* MSWorkSchoolViewController.xib */; };
-		90843432172EDED2000F6B8E /* MSDescriptionImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90843431172EDED2000F6B8E /* MSDescriptionImageView.xib */; };
 		90843435172EDF8D000F6B8E /* MSDescriptionImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90843434172EDF8D000F6B8E /* MSDescriptionImageView.m */; };
 		90843439172EF39E000F6B8E /* insideAGH.png in Resources */ = {isa = PBXBuildFile; fileRef = 90843438172EF39E000F6B8E /* insideAGH.png */; };
 		9084343D172F0C5C000F6B8E /* aghnoc.png in Resources */ = {isa = PBXBuildFile; fileRef = 9084343C172F0C5C000F6B8E /* aghnoc.png */; };
 		9084343F172F0C8D000F6B8E /* aghfront.png in Resources */ = {isa = PBXBuildFile; fileRef = 9084343E172F0C8D000F6B8E /* aghfront.png */; };
+		90843443172FB10E000F6B8E /* MSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90843441172FB10D000F6B8E /* MSBaseViewController.m */; };
+		90843444172FB10E000F6B8E /* MSBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90843442172FB10D000F6B8E /* MSBaseViewController.xib */; };
+		90843448172FB1E5000F6B8E /* MSWorkSchoolPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90843446172FB1E4000F6B8E /* MSWorkSchoolPageViewController.m */; };
+		9084344B172FB463000F6B8E /* baselogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9084344A172FB463000F6B8E /* baselogo.png */; };
+		9084344D172FB7F5000F6B8E /* hackKRK.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9084344C172FB7F5000F6B8E /* hackKRK.mp4 */; };
 		909756831728699700B6723B /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756821728699700B6723B /* UIView+Animations.m */; };
 		90975685172870B200B6723B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90975684172870B200B6723B /* QuartzCore.framework */; };
 		9097568A1728823F00B6723B /* MSProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756891728823F00B6723B /* MSProjectsViewController.m */; };
@@ -96,13 +99,18 @@
 		90843429172EC356000F6B8E /* backButPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backButPressed@2x.png"; path = "WWDC2013App/Images/backButPressed@2x.png"; sourceTree = SOURCE_ROOT; };
 		9084342C172ED995000F6B8E /* MSWorkSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSWorkSchoolViewController.h; path = Classes/ViewControllers/MSWorkSchoolViewController.h; sourceTree = "<group>"; };
 		9084342D172ED995000F6B8E /* MSWorkSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSWorkSchoolViewController.m; path = Classes/ViewControllers/MSWorkSchoolViewController.m; sourceTree = "<group>"; };
-		9084342E172ED995000F6B8E /* MSWorkSchoolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSWorkSchoolViewController.xib; path = Classes/ViewControllers/MSWorkSchoolViewController.xib; sourceTree = "<group>"; };
-		90843431172EDED2000F6B8E /* MSDescriptionImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSDescriptionImageView.xib; path = Classes/Views/MSDescriptionImageView.xib; sourceTree = "<group>"; };
 		90843433172EDF8D000F6B8E /* MSDescriptionImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSDescriptionImageView.h; path = Classes/Views/MSDescriptionImageView.h; sourceTree = "<group>"; };
 		90843434172EDF8D000F6B8E /* MSDescriptionImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSDescriptionImageView.m; path = Classes/Views/MSDescriptionImageView.m; sourceTree = "<group>"; };
 		90843438172EF39E000F6B8E /* insideAGH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = insideAGH.png; path = Images/insideAGH.png; sourceTree = "<group>"; };
 		9084343C172F0C5C000F6B8E /* aghnoc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aghnoc.png; path = Images/aghnoc.png; sourceTree = "<group>"; };
 		9084343E172F0C8D000F6B8E /* aghfront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aghfront.png; path = Images/aghfront.png; sourceTree = "<group>"; };
+		90843440172FB10D000F6B8E /* MSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSBaseViewController.h; path = Classes/ViewControllers/MSBaseViewController.h; sourceTree = "<group>"; };
+		90843441172FB10D000F6B8E /* MSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSBaseViewController.m; path = Classes/ViewControllers/MSBaseViewController.m; sourceTree = "<group>"; };
+		90843442172FB10D000F6B8E /* MSBaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSBaseViewController.xib; path = Classes/ViewControllers/MSBaseViewController.xib; sourceTree = "<group>"; };
+		90843445172FB1E3000F6B8E /* MSWorkSchoolPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSWorkSchoolPageViewController.h; path = Classes/ViewControllers/MSWorkSchoolPageViewController.h; sourceTree = "<group>"; };
+		90843446172FB1E4000F6B8E /* MSWorkSchoolPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSWorkSchoolPageViewController.m; path = Classes/ViewControllers/MSWorkSchoolPageViewController.m; sourceTree = "<group>"; };
+		9084344A172FB463000F6B8E /* baselogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = baselogo.png; path = Images/baselogo.png; sourceTree = "<group>"; };
+		9084344C172FB7F5000F6B8E /* hackKRK.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = hackKRK.mp4; path = Images/hackKRK.mp4; sourceTree = "<group>"; };
 		909756811728699700B6723B /* UIView+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Animations.h"; path = "Classes/UIView+Animations.h"; sourceTree = "<group>"; };
 		909756821728699700B6723B /* UIView+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Animations.m"; path = "Classes/UIView+Animations.m"; sourceTree = "<group>"; };
 		90975684172870B200B6723B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -205,10 +213,14 @@
 				909756891728823F00B6723B /* MSProjectsViewController.m */,
 				9084342C172ED995000F6B8E /* MSWorkSchoolViewController.h */,
 				9084342D172ED995000F6B8E /* MSWorkSchoolViewController.m */,
-				9084342E172ED995000F6B8E /* MSWorkSchoolViewController.xib */,
+				90843445172FB1E3000F6B8E /* MSWorkSchoolPageViewController.h */,
+				90843446172FB1E4000F6B8E /* MSWorkSchoolPageViewController.m */,
 				90843400172DA7C7000F6B8E /* MSMenuViewController.h */,
 				90843401172DA7C7000F6B8E /* MSMenuViewController.m */,
 				90843402172DA7C7000F6B8E /* MSMenuViewController.xib */,
+				90843440172FB10D000F6B8E /* MSBaseViewController.h */,
+				90843441172FB10D000F6B8E /* MSBaseViewController.m */,
+				90843442172FB10D000F6B8E /* MSBaseViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -226,7 +238,6 @@
 				90843405172DBF83000F6B8E /* MSMenuCollectionViewCell.h */,
 				90843406172DBF83000F6B8E /* MSMenuCollectionViewCell.m */,
 				90843408172DBFAA000F6B8E /* MSMenuCollectionViewCell.xib */,
-				90843431172EDED2000F6B8E /* MSDescriptionImageView.xib */,
 				90843433172EDF8D000F6B8E /* MSDescriptionImageView.h */,
 				90843434172EDF8D000F6B8E /* MSDescriptionImageView.m */,
 			);
@@ -260,7 +271,9 @@
 		9070C044172BDB5300FD5EFD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9084344C172FB7F5000F6B8E /* hackKRK.mp4 */,
 				9084343E172F0C8D000F6B8E /* aghfront.png */,
+				9084344A172FB463000F6B8E /* baselogo.png */,
 				9084343C172F0C5C000F6B8E /* aghnoc.png */,
 				90843438172EF39E000F6B8E /* insideAGH.png */,
 				9070C042172BDB5000FD5EFD /* projectBg.png */,
@@ -462,11 +475,12 @@
 				90843420172E9F81000F6B8E /* iconProject.png in Resources */,
 				9084342A172EC356000F6B8E /* backBut@2x.png in Resources */,
 				9084342B172EC356000F6B8E /* backButPressed@2x.png in Resources */,
-				90843430172ED995000F6B8E /* MSWorkSchoolViewController.xib in Resources */,
-				90843432172EDED2000F6B8E /* MSDescriptionImageView.xib in Resources */,
 				90843439172EF39E000F6B8E /* insideAGH.png in Resources */,
 				9084343D172F0C5C000F6B8E /* aghnoc.png in Resources */,
 				9084343F172F0C8D000F6B8E /* aghfront.png in Resources */,
+				90843444172FB10E000F6B8E /* MSBaseViewController.xib in Resources */,
+				9084344B172FB463000F6B8E /* baselogo.png in Resources */,
+				9084344D172FB7F5000F6B8E /* hackKRK.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +508,8 @@
 				90843407172DBF83000F6B8E /* MSMenuCollectionViewCell.m in Sources */,
 				9084342F172ED995000F6B8E /* MSWorkSchoolViewController.m in Sources */,
 				90843435172EDF8D000F6B8E /* MSDescriptionImageView.m in Sources */,
+				90843443172FB10E000F6B8E /* MSBaseViewController.m in Sources */,
+				90843448172FB1E5000F6B8E /* MSWorkSchoolPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "MSStyleSheet.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation MSStyleSheet
 
@@ -72,6 +73,11 @@
                            alpha:1.0];
 }
 
+- (UIView *)defaultBackgroundView
+{
+    return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgmenu"]];
+}
+
 #pragma mark - Fonts
 
 - (UIFont *)defaultTextFont
@@ -104,6 +110,19 @@
 - (UIColor *)lightTextColor
 {
     return [UIColor whiteColor];
+}
+
+#pragma mark - Restyler
+
+- (void)restyleBordersAndShadows:(UIView *)view
+{
+    view.layer.borderWidth = 1;
+    view.layer.borderColor = [[UIColor whiteColor] CGColor];
+    view.layer.cornerRadius = 2.f;
+    
+    view.layer.shadowColor = [[UIColor blackColor] CGColor];
+    view.layer.shadowRadius = 6.0;
+    view.layer.shadowOpacity = 0.6;
 }
 
 @end

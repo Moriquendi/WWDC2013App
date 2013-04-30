@@ -20,6 +20,7 @@
 
 // UIColors
 - (UIColor *)defaultBackgroundColor;
+- (UIView *)defaultBackgroundView;
 
 // Fonts
 - (UIFont *)defaultTextFont;
@@ -30,5 +31,7 @@
 // Fonts colors
 - (UIColor *)darkTextColor;
 - (UIColor *)lightTextColor;
+
+- (void)restyleBordersAndShadows:(UIView *)view;
 
 @end
