@@ -122,13 +122,14 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{20, 20}, {240, 160}}</string>
 								<reference key="NSSuperview" ref="49450886"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">I've started working at Base a year ago as an intern during holidays. I've continued to work there during studies as I couldn't imagine better place to learn from truly amazing people. At Base, we try to revolutionize CRM industry by foucing on mobile apps.</string>
+								<string key="IBUIText">I've started working at Base a year ago as an intern during holidays. I've continued to work there during studies as I couldn't imagine better place to learn from truly amazing people. At Base, we try to revolutionize sale process by foucing on mobile apps.</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -240,7 +241,7 @@
 						<int key="objectID">1</int>
 						<reference key="object" ref="191373211"/>
 						<array class="NSMutableArray" key="children">
-							<object class="IBNSLayoutConstraint" id="326638800">
+							<object class="IBNSLayoutConstraint" id="471788693">
 								<reference key="firstItem" ref="191373211"/>
 								<int key="firstAttribute">4</int>
 								<int key="relation">0</int>
@@ -800,7 +801,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">203</int>
-						<reference key="object" ref="326638800"/>
+						<reference key="object" ref="471788693"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
@@ -823,7 +824,7 @@
 					<reference ref="804020383"/>
 					<reference ref="103548436"/>
 					<reference ref="450490482"/>
-					<reference ref="326638800"/>
+					<reference ref="471788693"/>
 				</array>
 				<string key="121.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="124.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>

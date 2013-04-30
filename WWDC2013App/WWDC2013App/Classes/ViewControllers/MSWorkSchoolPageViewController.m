@@ -18,15 +18,21 @@
 
 @implementation MSWorkSchoolPageViewController
 
+- (id)initWithViewControllers:(NSArray *)vcs
+{
+    if (self = [super initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
+                        navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
+                                      options:nil]) {
+        self.controllers = vcs;
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.title = @"Work & School";
+
     self.dataSource = self;
-    
-    self.controllers = @[[[MSBaseViewController alloc] init],
-                         [[MSAGHViewController alloc] init]];
     
     [self setViewControllers:@[self.controllers[0]]
                    direction:UIPageViewControllerNavigationDirectionForward

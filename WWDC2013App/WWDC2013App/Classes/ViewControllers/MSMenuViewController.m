@@ -11,6 +11,9 @@
 #import "MSProjectsViewController.h"
 #import "MSWorkSchoolPageViewController.h"
 #import "MSCocoaHeadsViewController.h"
+#import "MSConferencesViewController.h"
+#import "MSBaseViewController.h"
+#import "MSAGHViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 NSString *const kMenuCellIdentifier = @"mci";
@@ -127,17 +130,25 @@ UICollectionViewDataSource>
                        withObject:[[MSProjectsViewController alloc] init]
                        afterDelay:0.5];
             break;
-        case 1:
+        case 1: {
+            NSArray *controllers = @[[[MSBaseViewController alloc] init],
+                                     [[MSAGHViewController alloc] init]];
+            MSWorkSchoolPageViewController *vc = [[MSWorkSchoolPageViewController alloc] initWithViewControllers:controllers];
+            vc.title = @"Work & School";
             [self performSelector:@selector(pushViewController:)
-                       withObject:[[MSWorkSchoolPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
-                                                                            navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
-                                                                                          options:nil]
+                       withObject:vc
                        afterDelay:0.5];
+        }
             break;
-        case 2:
+        case 2: {
+            NSArray *controllers = @[[[MSCocoaHeadsViewController alloc] init],
+                                     [[MSConferencesViewController alloc] init]];
+            MSWorkSchoolPageViewController *vc = [[MSWorkSchoolPageViewController alloc] initWithViewControllers:controllers];
+            vc.title = @"Learn & Teach";
             [self performSelector:@selector(pushViewController:)
-                       withObject:[[MSCocoaHeadsViewController alloc] init]
+                       withObject:vc
                        afterDelay:0.5];
+        }
             break;
         default:
             break;

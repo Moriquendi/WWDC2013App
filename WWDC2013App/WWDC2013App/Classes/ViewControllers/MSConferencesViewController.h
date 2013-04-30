@@ -1,5 +1,5 @@
 //
-//  MSWorkSchoolPageViewController.h
+//  MSConferencesViewController.h
 //  WWDC2013App
 //
 //  Created by Michał Śmiałko on 30.04.2013.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MSWorkSchoolPageViewController : UIPageViewController
-
-- (id)initWithViewControllers:(NSArray *)vcs;
+@interface MSConferencesViewController : UIViewController
 
 @end
