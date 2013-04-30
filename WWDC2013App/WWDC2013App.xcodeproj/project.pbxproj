@@ -34,6 +34,9 @@
 		90843448172FB1E5000F6B8E /* MSWorkSchoolPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90843446172FB1E4000F6B8E /* MSWorkSchoolPageViewController.m */; };
 		9084344B172FB463000F6B8E /* baselogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9084344A172FB463000F6B8E /* baselogo.png */; };
 		9084344D172FB7F5000F6B8E /* hackKRK.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9084344C172FB7F5000F6B8E /* hackKRK.mp4 */; };
+		90843451172FC3B9000F6B8E /* MSAGHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9084344F172FC3B8000F6B8E /* MSAGHViewController.m */; };
+		90843452172FC3B9000F6B8E /* MSAGHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90843450172FC3B9000F6B8E /* MSAGHViewController.xib */; };
+		90843454172FC472000F6B8E /* aghlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 90843453172FC472000F6B8E /* aghlogo.png */; };
 		909756831728699700B6723B /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756821728699700B6723B /* UIView+Animations.m */; };
 		90975685172870B200B6723B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90975684172870B200B6723B /* QuartzCore.framework */; };
 		9097568A1728823F00B6723B /* MSProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756891728823F00B6723B /* MSProjectsViewController.m */; };
@@ -111,6 +114,10 @@
 		90843446172FB1E4000F6B8E /* MSWorkSchoolPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSWorkSchoolPageViewController.m; path = Classes/ViewControllers/MSWorkSchoolPageViewController.m; sourceTree = "<group>"; };
 		9084344A172FB463000F6B8E /* baselogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = baselogo.png; path = Images/baselogo.png; sourceTree = "<group>"; };
 		9084344C172FB7F5000F6B8E /* hackKRK.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = hackKRK.mp4; path = Images/hackKRK.mp4; sourceTree = "<group>"; };
+		9084344E172FC3B8000F6B8E /* MSAGHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSAGHViewController.h; path = Classes/ViewControllers/MSAGHViewController.h; sourceTree = "<group>"; };
+		9084344F172FC3B8000F6B8E /* MSAGHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSAGHViewController.m; path = Classes/ViewControllers/MSAGHViewController.m; sourceTree = "<group>"; };
+		90843450172FC3B9000F6B8E /* MSAGHViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSAGHViewController.xib; path = Classes/ViewControllers/MSAGHViewController.xib; sourceTree = "<group>"; };
+		90843453172FC472000F6B8E /* aghlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aghlogo.png; path = Images/aghlogo.png; sourceTree = "<group>"; };
 		909756811728699700B6723B /* UIView+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Animations.h"; path = "Classes/UIView+Animations.h"; sourceTree = "<group>"; };
 		909756821728699700B6723B /* UIView+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Animations.m"; path = "Classes/UIView+Animations.m"; sourceTree = "<group>"; };
 		90975684172870B200B6723B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -221,6 +228,9 @@
 				90843440172FB10D000F6B8E /* MSBaseViewController.h */,
 				90843441172FB10D000F6B8E /* MSBaseViewController.m */,
 				90843442172FB10D000F6B8E /* MSBaseViewController.xib */,
+				9084344E172FC3B8000F6B8E /* MSAGHViewController.h */,
+				9084344F172FC3B8000F6B8E /* MSAGHViewController.m */,
+				90843450172FC3B9000F6B8E /* MSAGHViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -271,6 +281,7 @@
 		9070C044172BDB5300FD5EFD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				90843453172FC472000F6B8E /* aghlogo.png */,
 				9084344C172FB7F5000F6B8E /* hackKRK.mp4 */,
 				9084343E172F0C8D000F6B8E /* aghfront.png */,
 				9084344A172FB463000F6B8E /* baselogo.png */,
@@ -481,6 +492,8 @@
 				90843444172FB10E000F6B8E /* MSBaseViewController.xib in Resources */,
 				9084344B172FB463000F6B8E /* baselogo.png in Resources */,
 				9084344D172FB7F5000F6B8E /* hackKRK.mp4 in Resources */,
+				90843452172FC3B9000F6B8E /* MSAGHViewController.xib in Resources */,
+				90843454172FC472000F6B8E /* aghlogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +523,7 @@
 				90843435172EDF8D000F6B8E /* MSDescriptionImageView.m in Sources */,
 				90843443172FB10E000F6B8E /* MSBaseViewController.m in Sources */,
 				90843448172FB1E5000F6B8E /* MSWorkSchoolPageViewController.m in Sources */,
+				90843451172FC3B9000F6B8E /* MSAGHViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

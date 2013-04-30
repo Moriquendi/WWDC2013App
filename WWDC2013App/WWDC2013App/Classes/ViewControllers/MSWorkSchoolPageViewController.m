@@ -9,10 +9,11 @@
 #import "MSWorkSchoolPageViewController.h"
 #import "MSBaseViewController.h"
 #import "MSStyleSheet.h"
+#import "MSAGHViewController.h"
 
 @interface MSWorkSchoolPageViewController ()
+<UIPageViewControllerDataSource>
 @property (nonatomic, strong) NSArray *controllers;
-@property (nonatomic, strong) UIPageControl *pageControl;
 @end
 
 @implementation MSWorkSchoolPageViewController
@@ -22,18 +23,49 @@
     [super viewDidLoad];
     
     self.title = @"Work & School";
-
-    self.controllers = @[[[MSBaseViewController alloc] init]];
-    [self setViewControllers:self.controllers
+    self.dataSource = self;
+    
+    self.controllers = @[[[MSBaseViewController alloc] init],
+                         [[MSAGHViewController alloc] init]];
+    
+    [self setViewControllers:@[self.controllers[0]]
                    direction:UIPageViewControllerNavigationDirectionForward
                     animated:YES
                   completion:nil];
-    
-    // Page Control
-    self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - MS_THUMB_SIZE, self.view.frame.size.width, MS_THUMB_SIZE)];
-    self.pageControl.numberOfPages = [self.controllers count];
-    self.pageControl.currentPage = 0;
-    [self.view addSubview:self.pageControl];
+}
+
+#pragma mark - <UIPageViewCotrollerDataSource>
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
+{
+    NSInteger currentIndex = [self.controllers indexOfObject:viewController];
+    if (currentIndex + 1 < [self.controllers count]) {
+        return self.controllers[currentIndex+1];
+    }
+    else {
+        return nil;
+    }
+}
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
+{
+    NSInteger currentIndex = [self.controllers indexOfObject:viewController];
+    if (currentIndex - 1 >= 0) {
+        return self.controllers[currentIndex-1];
+    }
+    else {
+        return nil;
+    }
+}
+
+- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
+{
+    return [self.controllers count];
+}
+
+- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
+{
+    return 0;
 }
 
 @end

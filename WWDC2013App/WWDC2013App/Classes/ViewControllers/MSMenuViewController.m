@@ -129,7 +129,9 @@ UICollectionViewDataSource>
             break;
         case 1:
             [self performSelector:@selector(pushViewController:)
-                       withObject:[[MSWorkSchoolPageViewController alloc] init]
+                       withObject:[[MSWorkSchoolPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
+                                                                            navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
+                                                                                          options:nil]
                        afterDelay:0.5];
             break;
         default:

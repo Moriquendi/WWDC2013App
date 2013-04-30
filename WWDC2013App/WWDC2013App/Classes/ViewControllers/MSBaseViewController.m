@@ -27,9 +27,7 @@
 {
     [super viewDidLoad];
 
-    UIView *bgView = [[MSStyleSheet sharedInstance] defaultBackgroundView];
-    bgView.frame = self.view.bounds;
-    [self.view insertSubview:bgView atIndex:0];
+    self.view.backgroundColor = [UIColor clearColor];
 
     // Header
     [[MSStyleSheet sharedInstance] restyleBordersAndShadows:self.headerView];
