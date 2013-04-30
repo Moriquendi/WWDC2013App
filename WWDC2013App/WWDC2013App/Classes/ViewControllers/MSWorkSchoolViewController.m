@@ -10,6 +10,7 @@
 #import "MSDescriptionImageView.h"
 
 @interface MSWorkSchoolViewController ()
+<UICollectionViewDataSource>
 
 @end
 
@@ -31,6 +32,18 @@
     self.view.backgroundColor = [UIColor blackColor];
     
     [imageView startAnimation];
+}
+
+#pragma mark - <UICollectionViewDataSource>
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
 }
 
 @end

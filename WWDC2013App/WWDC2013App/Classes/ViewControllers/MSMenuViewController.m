@@ -10,6 +10,7 @@
 #import "MSMenuCollectionViewCell.h"
 #import "MSProjectsViewController.h"
 #import "MSWorkSchoolPageViewController.h"
+#import "MSCocoaHeadsViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 NSString *const kMenuCellIdentifier = @"mci";
@@ -122,7 +123,6 @@ UICollectionViewDataSource>
 
     switch (indexPath.row) {
         case 0:
-        case 2:
             [self performSelector:@selector(pushViewController:)
                        withObject:[[MSProjectsViewController alloc] init]
                        afterDelay:0.5];
@@ -132,6 +132,11 @@ UICollectionViewDataSource>
                        withObject:[[MSWorkSchoolPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
                                                                             navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
                                                                                           options:nil]
+                       afterDelay:0.5];
+            break;
+        case 2:
+            [self performSelector:@selector(pushViewController:)
+                       withObject:[[MSCocoaHeadsViewController alloc] init]
                        afterDelay:0.5];
             break;
         default:

@@ -37,6 +37,11 @@
 		90843451172FC3B9000F6B8E /* MSAGHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9084344F172FC3B8000F6B8E /* MSAGHViewController.m */; };
 		90843452172FC3B9000F6B8E /* MSAGHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90843450172FC3B9000F6B8E /* MSAGHViewController.xib */; };
 		90843454172FC472000F6B8E /* aghlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 90843453172FC472000F6B8E /* aghlogo.png */; };
+		9084345E17300A00000F6B8E /* MSCocoaHeadsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9084345C173009FF000F6B8E /* MSCocoaHeadsViewController.m */; };
+		9084345F17300A00000F6B8E /* MSCocoaHeadsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9084345D17300A00000F6B8E /* MSCocoaHeadsViewController.xib */; };
+		9084346117301505000F6B8E /* cocoaHeadsKrk.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 9084346017301505000F6B8E /* cocoaHeadsKrk.m4v */; };
+		90843463173018C9000F6B8E /* quote.png in Resources */ = {isa = PBXBuildFile; fileRef = 90843462173018C9000F6B8E /* quote.png */; };
+		9084346517301C92000F6B8E /* cocoaHeadsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9084346417301C92000F6B8E /* cocoaHeadsLogo.png */; };
 		909756831728699700B6723B /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756821728699700B6723B /* UIView+Animations.m */; };
 		90975685172870B200B6723B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90975684172870B200B6723B /* QuartzCore.framework */; };
 		9097568A1728823F00B6723B /* MSProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756891728823F00B6723B /* MSProjectsViewController.m */; };
@@ -118,6 +123,12 @@
 		9084344F172FC3B8000F6B8E /* MSAGHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSAGHViewController.m; path = Classes/ViewControllers/MSAGHViewController.m; sourceTree = "<group>"; };
 		90843450172FC3B9000F6B8E /* MSAGHViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSAGHViewController.xib; path = Classes/ViewControllers/MSAGHViewController.xib; sourceTree = "<group>"; };
 		90843453172FC472000F6B8E /* aghlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aghlogo.png; path = Images/aghlogo.png; sourceTree = "<group>"; };
+		9084345B173009FE000F6B8E /* MSCocoaHeadsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSCocoaHeadsViewController.h; path = Classes/ViewControllers/MSCocoaHeadsViewController.h; sourceTree = "<group>"; };
+		9084345C173009FF000F6B8E /* MSCocoaHeadsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSCocoaHeadsViewController.m; path = Classes/ViewControllers/MSCocoaHeadsViewController.m; sourceTree = "<group>"; };
+		9084345D17300A00000F6B8E /* MSCocoaHeadsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSCocoaHeadsViewController.xib; path = Classes/ViewControllers/MSCocoaHeadsViewController.xib; sourceTree = "<group>"; };
+		9084346017301505000F6B8E /* cocoaHeadsKrk.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = cocoaHeadsKrk.m4v; path = Images/cocoaHeadsKrk.m4v; sourceTree = "<group>"; };
+		90843462173018C9000F6B8E /* quote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quote.png; path = Images/quote.png; sourceTree = "<group>"; };
+		9084346417301C92000F6B8E /* cocoaHeadsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cocoaHeadsLogo.png; path = Images/cocoaHeadsLogo.png; sourceTree = "<group>"; };
 		909756811728699700B6723B /* UIView+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Animations.h"; path = "Classes/UIView+Animations.h"; sourceTree = "<group>"; };
 		909756821728699700B6723B /* UIView+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Animations.m"; path = "Classes/UIView+Animations.m"; sourceTree = "<group>"; };
 		90975684172870B200B6723B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -231,6 +242,9 @@
 				9084344E172FC3B8000F6B8E /* MSAGHViewController.h */,
 				9084344F172FC3B8000F6B8E /* MSAGHViewController.m */,
 				90843450172FC3B9000F6B8E /* MSAGHViewController.xib */,
+				9084345B173009FE000F6B8E /* MSCocoaHeadsViewController.h */,
+				9084345C173009FF000F6B8E /* MSCocoaHeadsViewController.m */,
+				9084345D17300A00000F6B8E /* MSCocoaHeadsViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -281,6 +295,9 @@
 		9070C044172BDB5300FD5EFD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9084346417301C92000F6B8E /* cocoaHeadsLogo.png */,
+				90843462173018C9000F6B8E /* quote.png */,
+				9084346017301505000F6B8E /* cocoaHeadsKrk.m4v */,
 				90843453172FC472000F6B8E /* aghlogo.png */,
 				9084344C172FB7F5000F6B8E /* hackKRK.mp4 */,
 				9084343E172F0C8D000F6B8E /* aghfront.png */,
@@ -494,6 +511,10 @@
 				9084344D172FB7F5000F6B8E /* hackKRK.mp4 in Resources */,
 				90843452172FC3B9000F6B8E /* MSAGHViewController.xib in Resources */,
 				90843454172FC472000F6B8E /* aghlogo.png in Resources */,
+				9084345F17300A00000F6B8E /* MSCocoaHeadsViewController.xib in Resources */,
+				9084346117301505000F6B8E /* cocoaHeadsKrk.m4v in Resources */,
+				90843463173018C9000F6B8E /* quote.png in Resources */,
+				9084346517301C92000F6B8E /* cocoaHeadsLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +545,7 @@
 				90843443172FB10E000F6B8E /* MSBaseViewController.m in Sources */,
 				90843448172FB1E5000F6B8E /* MSWorkSchoolPageViewController.m in Sources */,
 				90843451172FC3B9000F6B8E /* MSAGHViewController.m in Sources */,
+				9084345E17300A00000F6B8E /* MSCocoaHeadsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
