@@ -11,6 +11,7 @@
 
 @interface MSConferencesViewController ()
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *cellViews;
+@property (strong, nonatomic) IBOutletCollection(UIView) NSArray *confCells;
 
 @end
 

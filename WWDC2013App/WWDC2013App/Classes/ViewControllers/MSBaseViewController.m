@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (weak, nonatomic) IBOutlet UIView *descriptionBgView;
 @property (weak, nonatomic) IBOutlet UILabel *headerLabel;
+@property (nonatomic) BOOL videoPlayed;
 
 @end
 
@@ -50,7 +51,18 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.moviePlayerController play];
+    
+    if (!self.videoPlayed) {
+        [self.moviePlayerController performSelector:@selector(play) withObject:nil afterDelay:0.1];
+        self.videoPlayed = YES;
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self.moviePlayerController pause];
 }
 
 @end

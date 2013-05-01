@@ -74,7 +74,7 @@ UICollectionViewDelegate>
     MSImageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kImageCollectionViewCell
                                                                                 forIndexPath:indexPath];
 
-    cell.image = [UIImage imageNamed:self.projectDetails.imageNames[indexPath.item]];
+    cell.image = [UIImage imageNamed:self.projectDetails.imageNames[[self.projectDetails.imageNames count] - indexPath.item -1]];
     
     return cell;    
 }

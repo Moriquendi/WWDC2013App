@@ -51,7 +51,7 @@ UICollectionViewDataSource>
 
     // Clean up after disappearing animations
     for (UICollectionViewCell *cell in [self.collectionView visibleCells]) {
-        [UIView animateWithDuration:0.3 animations:^{
+        [UIView animateWithDuration:0.45 animations:^{
             cell.alpha = 1.0;
             cell.transform = CGAffineTransformIdentity;
         }];

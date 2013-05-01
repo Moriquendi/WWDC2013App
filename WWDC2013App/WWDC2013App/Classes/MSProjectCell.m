@@ -48,7 +48,7 @@
     
     self.contentBgView.layer.shadowColor = [[UIColor blackColor] CGColor];
     self.contentBgView.layer.shadowRadius = 6.0;
-    self.contentBgView.layer.shadowOpacity = 0.6;
+    self.contentBgView.layer.shadowOpacity = 1.0;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
