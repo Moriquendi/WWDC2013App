@@ -43,7 +43,6 @@
 		9084346517301C92000F6B8E /* cocoaHeadsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9084346417301C92000F6B8E /* cocoaHeadsLogo.png */; };
 		908434691730238F000F6B8E /* MSConferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 908434671730238D000F6B8E /* MSConferencesViewController.m */; };
 		9084346A1730238F000F6B8E /* MSConferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 908434681730238E000F6B8E /* MSConferencesViewController.xib */; };
-		9084346C17302C07000F6B8E /* nsconf.png in Resources */ = {isa = PBXBuildFile; fileRef = 9084346B17302C07000F6B8E /* nsconf.png */; };
 		909756831728699700B6723B /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756821728699700B6723B /* UIView+Animations.m */; };
 		90975685172870B200B6723B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90975684172870B200B6723B /* QuartzCore.framework */; };
 		9097568A1728823F00B6723B /* MSProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909756891728823F00B6723B /* MSProjectsViewController.m */; };
@@ -70,6 +69,12 @@
 		90A59F5C172C6DCB00595B85 /* BurglarsNight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F5A172C6DCB00595B85 /* BurglarsNight.plist */; };
 		90A59F5D172C6DCB00595B85 /* KrakJam.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F5B172C6DCB00595B85 /* KrakJam.plist */; };
 		90A59F61172C7ABF00595B85 /* LeapMotion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A59F5F172C7ABF00595B85 /* LeapMotion.plist */; };
+		90C3969C1731208B00D4E160 /* karatePandaPC-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 90C3969B1731208B00D4E160 /* karatePandaPC-2.png */; };
+		90C3969E173121CE00D4E160 /* burglars-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 90C3969D173121CE00D4E160 /* burglars-2.png */; };
+		90C396A1173122FC00D4E160 /* farm2-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 90C3969F173122FC00D4E160 /* farm2-2.png */; };
+		90C396A2173122FC00D4E160 /* farm2-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 90C396A0173122FC00D4E160 /* farm2-3.png */; };
+		90C396A41731244100D4E160 /* karatePandaiOS-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 90C396A31731244100D4E160 /* karatePandaiOS-2.png */; };
+		90C396A6173125D900D4E160 /* leap-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 90C396A5173125D900D4E160 /* leap-2.png */; };
 		90D70E2417285B2800D7468E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2317285B2800D7468E /* UIKit.framework */; };
 		90D70E2617285B2800D7468E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2517285B2800D7468E /* Foundation.framework */; };
 		90D70E2817285B2800D7468E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2717285B2800D7468E /* CoreGraphics.framework */; };
@@ -130,7 +135,6 @@
 		908434661730238C000F6B8E /* MSConferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSConferencesViewController.h; path = Classes/ViewControllers/MSConferencesViewController.h; sourceTree = "<group>"; };
 		908434671730238D000F6B8E /* MSConferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSConferencesViewController.m; path = Classes/ViewControllers/MSConferencesViewController.m; sourceTree = "<group>"; };
 		908434681730238E000F6B8E /* MSConferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSConferencesViewController.xib; path = Classes/ViewControllers/MSConferencesViewController.xib; sourceTree = "<group>"; };
-		9084346B17302C07000F6B8E /* nsconf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nsconf.png; path = Images/nsconf.png; sourceTree = "<group>"; };
 		909756811728699700B6723B /* UIView+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Animations.h"; path = "Classes/UIView+Animations.h"; sourceTree = "<group>"; };
 		909756821728699700B6723B /* UIView+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Animations.m"; path = "Classes/UIView+Animations.m"; sourceTree = "<group>"; };
 		90975684172870B200B6723B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -165,6 +169,12 @@
 		90A59F5A172C6DCB00595B85 /* BurglarsNight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BurglarsNight.plist; path = ModelData/BurglarsNight.plist; sourceTree = "<group>"; };
 		90A59F5B172C6DCB00595B85 /* KrakJam.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = KrakJam.plist; path = ModelData/KrakJam.plist; sourceTree = "<group>"; };
 		90A59F5F172C7ABF00595B85 /* LeapMotion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LeapMotion.plist; path = ModelData/LeapMotion.plist; sourceTree = "<group>"; };
+		90C3969B1731208B00D4E160 /* karatePandaPC-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "karatePandaPC-2.png"; sourceTree = "<group>"; };
+		90C3969D173121CE00D4E160 /* burglars-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "burglars-2.png"; sourceTree = "<group>"; };
+		90C3969F173122FC00D4E160 /* farm2-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "farm2-2.png"; sourceTree = "<group>"; };
+		90C396A0173122FC00D4E160 /* farm2-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "farm2-3.png"; sourceTree = "<group>"; };
+		90C396A31731244100D4E160 /* karatePandaiOS-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "karatePandaiOS-2.png"; sourceTree = "<group>"; };
+		90C396A5173125D900D4E160 /* leap-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leap-2.png"; sourceTree = "<group>"; };
 		90D70E2017285B2800D7468E /* WWDC2013App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC2013App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D70E2317285B2800D7468E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		90D70E2517285B2800D7468E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -272,6 +282,8 @@
 		901F9021172B20FE00954653 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				90C396A5173125D900D4E160 /* leap-2.png */,
+				90C3969B1731208B00D4E160 /* karatePandaPC-2.png */,
 				90843428172EC356000F6B8E /* backBut@2x.png */,
 				90843429172EC356000F6B8E /* backButPressed@2x.png */,
 				9084341C172E9F81000F6B8E /* iconLearn.png */,
@@ -279,14 +291,18 @@
 				9084341A172E9351000F6B8E /* iconSchool.png */,
 				9084340C172DC271000F6B8E /* bgmenu.png */,
 				90A59F4C172C6DB700595B85 /* burglars-1.png */,
+				90C3969D173121CE00D4E160 /* burglars-2.png */,
 				90A59F4D172C6DB700595B85 /* KaratePandaTrailer.mp4 */,
 				90A59F4E172C6DB700595B85 /* karatePandaiOS-1.png */,
+				90C396A31731244100D4E160 /* karatePandaiOS-2.png */,
 				90A59F4F172C6DB700595B85 /* karatePandaPC-0.png */,
 				90A59F50172C6DB700595B85 /* karatePandaPC-1.png */,
 				90A59F51172C6DB700595B85 /* KrakJamTrailer.m4v */,
 				90A59F52172C6DB700595B85 /* krakjam-1.png */,
 				90A59F30172C02C400595B85 /* Base-1.png */,
 				901F9022172B20FE00954653 /* farm2-1.png */,
+				90C3969F173122FC00D4E160 /* farm2-2.png */,
+				90C396A0173122FC00D4E160 /* farm2-3.png */,
 				908433FC172D627C000F6B8E /* leap-1.png */,
 			);
 			name = Projects;
@@ -296,7 +312,6 @@
 		9070C044172BDB5300FD5EFD /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				9084346B17302C07000F6B8E /* nsconf.png */,
 				9084346417301C92000F6B8E /* cocoaHeadsLogo.png */,
 				90843462173018C9000F6B8E /* quote.png */,
 				9084346017301505000F6B8E /* cocoaHeadsKrk.m4v */,
@@ -514,7 +529,12 @@
 				90843463173018C9000F6B8E /* quote.png in Resources */,
 				9084346517301C92000F6B8E /* cocoaHeadsLogo.png in Resources */,
 				9084346A1730238F000F6B8E /* MSConferencesViewController.xib in Resources */,
-				9084346C17302C07000F6B8E /* nsconf.png in Resources */,
+				90C3969C1731208B00D4E160 /* karatePandaPC-2.png in Resources */,
+				90C3969E173121CE00D4E160 /* burglars-2.png in Resources */,
+				90C396A1173122FC00D4E160 /* farm2-2.png in Resources */,
+				90C396A2173122FC00D4E160 /* farm2-3.png in Resources */,
+				90C396A41731244100D4E160 /* karatePandaiOS-2.png in Resources */,
+				90C396A6173125D900D4E160 /* leap-2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

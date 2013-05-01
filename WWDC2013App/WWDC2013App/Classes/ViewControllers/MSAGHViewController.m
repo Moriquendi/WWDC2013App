@@ -34,10 +34,7 @@
     UIImageView *view2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"aghfront"]];
     UIImageView *view3 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"aghnoc"]];
     self.imagesGroupView.imagesViews = @[view1, view2, view3];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
+    
     [self.imagesGroupView startAnimation];
 }
 

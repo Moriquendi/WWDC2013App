@@ -21,6 +21,7 @@ UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *description;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) MPMoviePlayerController *moviePlayerController;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 @property (nonatomic, strong) MSProject *projectDetails;
 @end
@@ -42,6 +43,8 @@ UICollectionViewDelegate>
     [self.collectionView registerNib:[UINib nibWithNibName:@"MSImageCollectionViewCell" bundle:nil]
           forCellWithReuseIdentifier:kImageCollectionViewCell];
     self.collectionView.backgroundColor = [UIColor clearColor];
+    
+    [self.pageControl setNumberOfPages:[self.projectDetails.imageNames count]];
 }
 
 #pragma mark - MSProjectDetailsViewController
@@ -96,6 +99,13 @@ UICollectionViewDelegate>
                                                  name:MPMoviePlayerPlaybackDidFinishNotification
                                                object:self.moviePlayerController];
     
+}
+
+#pragma mark - <UICollectionViewDelegate>
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    self.pageControl.currentPage = floor((scrollView.contentOffset.x - scrollView.frame.size.width / 2) / scrollView.frame.size.width) + 1;
 }
 
 @end
