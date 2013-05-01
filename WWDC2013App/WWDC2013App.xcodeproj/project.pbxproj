@@ -75,6 +75,8 @@
 		90C396A2173122FC00D4E160 /* farm2-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 90C396A0173122FC00D4E160 /* farm2-3.png */; };
 		90C396A41731244100D4E160 /* karatePandaiOS-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 90C396A31731244100D4E160 /* karatePandaiOS-2.png */; };
 		90C396A6173125D900D4E160 /* leap-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 90C396A5173125D900D4E160 /* leap-2.png */; };
+		90C396A817312B6B00D4E160 /* MSMovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C396A717312B6B00D4E160 /* MSMovieCollectionViewCell.xib */; };
+		90C396AA17312BD700D4E160 /* play-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90C396A917312BD700D4E160 /* play-icon@2x.png */; };
 		90D70E2417285B2800D7468E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2317285B2800D7468E /* UIKit.framework */; };
 		90D70E2617285B2800D7468E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2517285B2800D7468E /* Foundation.framework */; };
 		90D70E2817285B2800D7468E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70E2717285B2800D7468E /* CoreGraphics.framework */; };
@@ -175,6 +177,8 @@
 		90C396A0173122FC00D4E160 /* farm2-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "farm2-3.png"; sourceTree = "<group>"; };
 		90C396A31731244100D4E160 /* karatePandaiOS-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "karatePandaiOS-2.png"; sourceTree = "<group>"; };
 		90C396A5173125D900D4E160 /* leap-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leap-2.png"; sourceTree = "<group>"; };
+		90C396A717312B6B00D4E160 /* MSMovieCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSMovieCollectionViewCell.xib; path = Classes/Views/MSMovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		90C396A917312BD700D4E160 /* play-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play-icon@2x.png"; path = "Images/play-icon@2x.png"; sourceTree = "<group>"; };
 		90D70E2017285B2800D7468E /* WWDC2013App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC2013App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D70E2317285B2800D7468E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		90D70E2517285B2800D7468E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -275,6 +279,7 @@
 				90843408172DBFAA000F6B8E /* MSMenuCollectionViewCell.xib */,
 				90843433172EDF8D000F6B8E /* MSDescriptionImageView.h */,
 				90843434172EDF8D000F6B8E /* MSDescriptionImageView.m */,
+				90C396A717312B6B00D4E160 /* MSMovieCollectionViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 		90A59F29172BF06B00595B85 /* ModelData */ = {
 			isa = PBXGroup;
 			children = (
+				90C396A917312BD700D4E160 /* play-icon@2x.png */,
 				90A59F5F172C7ABF00595B85 /* LeapMotion.plist */,
 				90A59F25172BF06900595B85 /* Farm2.plist */,
 				90A59F2B172BFEFC00595B85 /* KaratePandaiOS.plist */,
@@ -535,6 +541,8 @@
 				90C396A2173122FC00D4E160 /* farm2-3.png in Resources */,
 				90C396A41731244100D4E160 /* karatePandaiOS-2.png in Resources */,
 				90C396A6173125D900D4E160 /* leap-2.png in Resources */,
+				90C396A817312B6B00D4E160 /* MSMovieCollectionViewCell.xib in Resources */,
+				90C396AA17312BD700D4E160 /* play-icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

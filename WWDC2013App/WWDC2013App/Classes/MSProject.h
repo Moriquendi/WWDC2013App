@@ -14,6 +14,7 @@
 @property (nonatomic, readonly, strong) NSArray *imageNames;
 @property (nonatomic, readonly, strong) NSString *projectDescription;
 @property (nonatomic, readonly, strong) NSString *projectName;
+@property (nonatomic, readonly, strong) NSString *movieName;
 
 + (NSArray *)loadProjectsFromFile:(NSString *)fileName;
 

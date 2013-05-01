@@ -12,6 +12,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 
 NSString *const kImageCollectionViewCell = @"icv";
+NSString *const kMovieCollectionViewCell = @"kMovie";
 
 @interface MSProjectDetailsViewController ()
 <UICollectionViewDataSource,
@@ -42,9 +43,27 @@ UICollectionViewDelegate>
         
     [self.collectionView registerNib:[UINib nibWithNibName:@"MSImageCollectionViewCell" bundle:nil]
           forCellWithReuseIdentifier:kImageCollectionViewCell];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"MSMovieCollectionViewCell" bundle:nil]
+          forCellWithReuseIdentifier:kMovieCollectionViewCell];
+
     self.collectionView.backgroundColor = [UIColor clearColor];
-    
+
     [self.pageControl setNumberOfPages:[self.projectDetails.imageNames count]];
+
+    if (self.projectDetails.movieName) {
+        self.pageControl.numberOfPages++;
+
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:self.projectDetails.movieName ofType:@"mp4"];
+        NSURL *fileURL = [NSURL fileURLWithPath:filePath];
+        self.moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self.moviePlayerController stop];
 }
 
 #pragma mark - MSProjectDetailsViewController
@@ -57,28 +76,30 @@ UICollectionViewDelegate>
     return self;
 }
 
-- (void)movieFinished:(NSNotification *)notification
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:MPMoviePlayerPlaybackDidFinishNotification
-                                                  object:self.moviePlayerController];
-    [self.moviePlayerController.view removeFromSuperview];
-}
-
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return [self.projectDetails.imageNames count];
+    if (self.projectDetails.movieName) {
+        return [self.projectDetails.imageNames count] + 1;
+    }
+    else {
+        return [self.projectDetails.imageNames count];
+    }
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.row == 0 && self.projectDetails.movieName) {
+        UICollectionViewCell *movieCell = [collectionView dequeueReusableCellWithReuseIdentifier:kMovieCollectionViewCell forIndexPath:indexPath];
+        return movieCell;
+    }
+    
     MSImageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kImageCollectionViewCell
                                                                                 forIndexPath:indexPath];
-
-    cell.image = [UIImage imageNamed:self.projectDetails.imageNames[[self.projectDetails.imageNames count] - indexPath.item -1]];
     
+    NSInteger isMovieCellVisible = self.projectDetails.movieName == nil ? 0 : 1;
+    cell.image = [UIImage imageNamed:self.projectDetails.imageNames[[self.projectDetails.imageNames count] -1 - (indexPath.item-isMovieCellVisible)]];
     return cell;    
 }
 
@@ -86,22 +107,23 @@ UICollectionViewDelegate>
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Movie controller
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"KaratePandaTrailer" ofType:@"mp4"];
-    NSURL *fileURL = [NSURL fileURLWithPath:filePath];
-    self.moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
-    [self.view addSubview:self.moviePlayerController.view];
-    self.moviePlayerController.fullscreen = YES;
-    [self.moviePlayerController play];
-
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(movieFinished:)
-                                                 name:MPMoviePlayerPlaybackDidFinishNotification
-                                               object:self.moviePlayerController];
-    
+    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    if ([[cell reuseIdentifier] isEqualToString:kMovieCollectionViewCell] && !self.moviePlayerController.view.superview) {
+        // Movie controller
+        self.moviePlayerController.view.frame = CGRectInset(cell.bounds, 20, 0);
+        [cell addSubview:self.moviePlayerController.view];
+        [self.moviePlayerController play];
+    }
 }
 
 #pragma mark - <UICollectionViewDelegate>
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (self.moviePlayerController) {
+        [self.moviePlayerController pause];
+    }
+}
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {

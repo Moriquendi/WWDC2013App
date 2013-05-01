@@ -13,6 +13,7 @@ NSString *const kPlistProjectDate = @"date";
 NSString *const kPlistImageNames = @"imageNames";
 NSString *const kPlistProjectDescription = @"projectDescription";
 NSString *const kPlistProjectName = @"projectName";
+NSString *const kPlistMovieName = @"movie";
 
 @interface MSProject ()
 @property (nonatomic, readwrite, strong) NSString *title;
@@ -20,6 +21,7 @@ NSString *const kPlistProjectName = @"projectName";
 @property (nonatomic, readwrite, strong) NSArray *imageNames;
 @property (nonatomic, readwrite, strong) NSString *projectDescription;
 @property (nonatomic, readwrite, strong) NSString *projectName;
+@property (nonatomic, readwrite, strong) NSString *movieName;
 @end
 
 @implementation MSProject
@@ -53,6 +55,7 @@ NSString *const kPlistProjectName = @"projectName";
         self.date = data[kPlistProjectDate];
         self.imageNames = data[kPlistImageNames];
         self.projectDescription = data[kPlistProjectDescription];
+        self.movieName = data[kPlistMovieName];
     }
     return self;
 }
