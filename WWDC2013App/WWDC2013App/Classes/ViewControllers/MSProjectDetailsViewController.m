@@ -53,7 +53,8 @@ UICollectionViewDelegate>
     if (self.projectDetails.movieName) {
         self.pageControl.numberOfPages++;
 
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:self.projectDetails.movieName ofType:@"mp4"];
+        NSUInteger dotIndex = [self.projectDetails.movieName rangeOfString:@"."].location;
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:[self.projectDetails.movieName substringToIndex:dotIndex] ofType:[self.projectDetails.movieName substringFromIndex:dotIndex+1]];
         NSURL *fileURL = [NSURL fileURLWithPath:filePath];
         self.moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
     }

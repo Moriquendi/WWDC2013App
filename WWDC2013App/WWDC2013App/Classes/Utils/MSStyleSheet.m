@@ -61,6 +61,10 @@
                          UITextAttributeTextShadowColor : [UIColor clearColor],
                                     UITextAttributeFont : [UIFont fontWithName:@"Cochin-Bold" size:11.0]}
                                                 forState:UIControlStateHighlighted];
+
+    // UIPageControl
+    [[UIPageControl appearance] setPageIndicatorTintColor:[UIColor colorWithWhite:69.f/255.f alpha:1.0]];
+    [[UIPageControl appearance] setCurrentPageIndicatorTintColor:[UIColor colorWithRed:1.f/255.f green:184.f/255.f blue:147.f/255.f alpha:1.0]];
 }
 
 #pragma mark - Colors

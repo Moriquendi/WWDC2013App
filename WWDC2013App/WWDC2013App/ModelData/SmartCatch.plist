@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date</key>
+	<string>2012</string>
+	<key>imageNames</key>
+	<array>
+		<string>smat-catch-0</string>
+		<string>smat-catch-1</string>
+		<string>smat-catch-2</string>
+	</array>
+	<key>movie</key>
+	<string>SmartCatchPromo.m4v</string>
+	<key>projectDescription</key>
+	<string>Smart Taps is a game for kids developed by me and my friend in few days as a warm-up before future bigger projects we&apos;re planning.</string>
+	<key>projectName</key>
+	<string>Smart Taps</string>
+</dict>
+</plist>
