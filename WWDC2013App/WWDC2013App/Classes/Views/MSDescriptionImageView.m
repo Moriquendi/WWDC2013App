@@ -19,6 +19,19 @@
 
 @implementation MSDescriptionImageView
 
+#pragma mark - UIView
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    for (UIView *view in self.imagesViews) {
+        view.frame = self.bounds;
+    }
+}
+
+#pragma mark - MSDescriptionImageView
+
 - (void)startAnimation
 {
     self.currentImageIndex = 0;
@@ -45,24 +58,13 @@
     
     self.backView.alpha = 0.0;
     [self addSubview:self.backView];
-//    self.backView.frame = CGRectMake(0,
-//                                     0,//self.frame.size.height - self.backView.frame.size.height/2.f,
-//                                     self.frame.size.width,//self.backView.frame.size.width,
-//                                     self.frame.size.height-self.frame.origin.y);
     [UIView animateWithDuration:3.0
                           delay:0.0
                         options:UIViewAnimationOptionCurveEaseIn
                      animations:^{
         self.frontView.alpha = 0.0;
         self.backView.alpha = 1.0;
-//        self.backView.frame = CGRectOffset(self.backView.frame, -(self.backView.frame.size.width - self.frame.size.width)/2., 0);
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:3.0
-                              delay:0.0
-                            options:UIViewAnimationOptionCurveEaseOut
-                         animations:^{
-//            self.backView.frame = CGRectOffset(self.backView.frame, -(self.backView.frame.size.width - self.frame.size.width)/2., 0);
-        } completion:nil];
         [self.frontView removeFromSuperview];
         self.frontView = self.backView;
     }];
