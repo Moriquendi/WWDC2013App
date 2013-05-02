@@ -10,7 +10,7 @@
 		<string>karatePandaiOS-2</string>
 	</array>
 	<key>projectDescription</key>
-	<string>Karate Panda iOS bla bla desc</string>
+	<string>Karate Panda was originally written for PC but I&apos;ve decided to rewrite C++ code to Objective-C and publish it on App Store. I plan to release it this summer.</string>
 	<key>projectName</key>
 	<string>Karate Panda iOS</string>
 </dict>

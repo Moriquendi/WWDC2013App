@@ -1041,8 +1041,8 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="avatar.jpg">{422, 422}</string>
-			<string key="chmor.png">{370, 145}</string>
+			<string key="avatar.jpg">{211, 211}</string>
+			<string key="chmor.png">{185, 73}</string>
 		</dictionary>
 		<bool key="IBDocument.UseAutolayout">YES</bool>
 		<string key="IBCocoaTouchPluginVersion">2083</string>
