@@ -24,6 +24,8 @@
 
 @implementation MSBaseViewController
 
+#pragma mark - UIViewController
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -63,6 +65,12 @@
     [super viewWillDisappear:animated];
     
     [self.moviePlayerController pause];
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    self.moviePlayerController.view.frame = self.videoView.bounds;
 }
 
 @end

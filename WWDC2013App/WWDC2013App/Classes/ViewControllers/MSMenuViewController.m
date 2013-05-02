@@ -26,6 +26,7 @@ UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UIView *cloudView;
 @property (nonatomic, strong) NSArray *textMessages;
 @property (weak, nonatomic) IBOutlet UILabel *messageLabel;
+@property (nonatomic, strong) NSTimer *messagesChangerTimer;
 @end
 
 @implementation MSMenuViewController
@@ -67,6 +68,9 @@ UICollectionViewDataSource>
 {
     [super viewDidAppear:animated];
 
+    // Always show third item. Looks much nicer on small iPhone.
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:2 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:NO];
+    
     if (self.avatarImage.hidden) {
         self.avatarImage.hidden = NO;
         [UIView animateWithDuration:0.6 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
@@ -82,7 +86,7 @@ UICollectionViewDataSource>
         }];
     }
 
-    [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(changeMessage) userInfo:nil repeats:YES];
+    self.messagesChangerTimer = [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(changeMessage) userInfo:nil repeats:YES];
     
     // Clean up after disappearing animations
     for (UICollectionViewCell *cell in [self.collectionView visibleCells]) {
@@ -96,6 +100,12 @@ UICollectionViewDataSource>
     for (NSIndexPath *selectedCellPath in [self.collectionView indexPathsForSelectedItems]) {
         [self.collectionView deselectItemAtIndexPath:selectedCellPath animated:YES];
     }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.messagesChangerTimer invalidate];
 }
 
 #pragma mark - <UICollectionViewDataSource>
