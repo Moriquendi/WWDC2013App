@@ -24,7 +24,8 @@ UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImage;
 @property (weak, nonatomic) IBOutlet UIView *cloudView;
-
+@property (nonatomic, strong) NSArray *textMessages;
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 @end
 
 @implementation MSMenuViewController
@@ -52,6 +53,14 @@ UICollectionViewDataSource>
     self.avatarImage.transform = CGAffineTransformScale(self.avatarImage.transform, 1/10, 1/10);
     self.cloudView.transform = CGAffineTransformScale(self.cloudView.transform, 1/10, 1/10);
     self.avatarImage.hidden = YES;
+    
+    self.textMessages = @[@"I'm 21 year old student...",
+                          @"...and have spent 2 indescribable years learning iOS",
+                          @"I'm studying Computer Science at AGH, Kraków.",
+                          @"I love teaching others how to make iOS apps",
+                          @"Hope to see you one day!",
+                          @"PAUSE", // poison
+                          @"Hey! Here's a short story of my life!"];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -72,6 +81,9 @@ UICollectionViewDataSource>
             }];
         }];
     }
+
+    [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(changeMessage) userInfo:nil repeats:YES];
+    
     // Clean up after disappearing animations
     for (UICollectionViewCell *cell in [self.collectionView visibleCells]) {
         [UIView animateWithDuration:0.45 animations:^{
@@ -180,8 +192,32 @@ UICollectionViewDataSource>
 
 #pragma mark - MSMenuViewController
 
+- (void)changeMessage
+{
+    static NSInteger currentMessageIndex = 0;
+    
+    if ([self.textMessages[currentMessageIndex] isEqualToString:@"PAUSE"]) {
+        currentMessageIndex++;
+        return;
+    }
+    [UIView animateWithDuration:0.4 animations:^{
+        self.cloudView.transform = CGAffineTransformScale(self.cloudView.transform, 1/10, 1/10);
+    } completion:^(BOOL finished) {
+        self.messageLabel.text = self.textMessages[currentMessageIndex];
+        currentMessageIndex++;
+        if (currentMessageIndex == [self.textMessages count]) {
+            currentMessageIndex = 0;
+        }
+        
+        [UIView animateWithDuration:0.4 animations:^{
+            self.cloudView.transform = CGAffineTransformIdentity;
+        }];
+    }];
+}
+
 - (void)pushViewController:(UIViewController *)vc
 {
     [self.navigationController pushViewController:vc animated:YES];
 }
+
 @end
