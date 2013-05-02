@@ -10,7 +10,6 @@
 		901F9023172B20FE00954653 /* farm2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 901F9022172B20FE00954653 /* farm2-1.png */; };
 		903543E417319A0100233E2A /* MSCocoaCampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903543E217319A0100233E2A /* MSCocoaCampViewController.m */; };
 		903543E517319A0100233E2A /* MSCocoaCampViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 903543E317319A0100233E2A /* MSCocoaCampViewController.xib */; };
-		903543E91731A64F00233E2A /* weird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 903543E81731A64F00233E2A /* weird.jpg */; };
 		903543EB1731ACBF00233E2A /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 903543EA1731ACBF00233E2A /* avatar.jpg */; };
 		9070C041172BCF4900FD5EFD /* MSStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9070C040172BCF4900FD5EFD /* MSStyleSheet.m */; };
 		9070C043172BDB5000FD5EFD /* projectBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9070C042172BDB5000FD5EFD /* projectBg.png */; };
@@ -106,7 +105,6 @@
 		903543E117319A0100233E2A /* MSCocoaCampViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSCocoaCampViewController.h; path = Classes/ViewControllers/MSCocoaCampViewController.h; sourceTree = "<group>"; };
 		903543E217319A0100233E2A /* MSCocoaCampViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSCocoaCampViewController.m; path = Classes/ViewControllers/MSCocoaCampViewController.m; sourceTree = "<group>"; };
 		903543E317319A0100233E2A /* MSCocoaCampViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSCocoaCampViewController.xib; path = Classes/ViewControllers/MSCocoaCampViewController.xib; sourceTree = "<group>"; };
-		903543E81731A64F00233E2A /* weird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = weird.jpg; path = Images/weird.jpg; sourceTree = "<group>"; };
 		903543EA1731ACBF00233E2A /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = avatar.jpg; path = Images/avatar.jpg; sourceTree = "<group>"; };
 		9070C03F172BCF4900FD5EFD /* MSStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSStyleSheet.h; path = Classes/Utils/MSStyleSheet.h; sourceTree = "<group>"; };
 		9070C040172BCF4900FD5EFD /* MSStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSStyleSheet.m; path = Classes/Utils/MSStyleSheet.m; sourceTree = "<group>"; };
@@ -346,7 +344,6 @@
 				90ED0B6B17329FBD00D6F785 /* infinityloop.jpg */,
 				90FD98AC17325C910005AB8E /* chmor.png */,
 				903543EA1731ACBF00233E2A /* avatar.jpg */,
-				903543E81731A64F00233E2A /* weird.jpg */,
 				90C396B617315D2200D4E160 /* SmartCatchPromo.m4v */,
 				90C396B01731580B00D4E160 /* smat-catch-0.png */,
 				90C396B11731580B00D4E160 /* smat-catch-1.png */,
@@ -584,7 +581,6 @@
 				90C396B51731580B00D4E160 /* smat-catch-2.png in Resources */,
 				90C396B717315D2200D4E160 /* SmartCatchPromo.m4v in Resources */,
 				903543E517319A0100233E2A /* MSCocoaCampViewController.xib in Resources */,
-				903543E91731A64F00233E2A /* weird.jpg in Resources */,
 				903543EB1731ACBF00233E2A /* avatar.jpg in Resources */,
 				90FD98AD17325C910005AB8E /* chmor.png in Resources */,
 				90ED0B6C17329FBD00D6F785 /* infinityloop.jpg in Resources */,

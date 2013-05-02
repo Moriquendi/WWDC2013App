@@ -61,7 +61,7 @@ UICollectionViewDataSource>
                           @"I'm studying Computer Science at AGH, Kraków.",
                           @"I love teaching others how to make iOS apps",
                           @"Hope to see you one day!",
-                          @"PAUSE", // poison
+                          @"PAUSE", @"PAUSE", // poison
                           @"Hey! Here's a short story of my life!"];
 }
 

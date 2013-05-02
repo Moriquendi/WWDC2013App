@@ -64,7 +64,9 @@ UICollectionViewDelegate>
 {
     [super viewWillDisappear:animated];
     
-    [self.moviePlayerController stop];
+    if (!self.moviePlayerController.fullscreen) {
+        [self.moviePlayerController stop];
+    }
 }
 
 #pragma mark - MSProjectDetailsViewController

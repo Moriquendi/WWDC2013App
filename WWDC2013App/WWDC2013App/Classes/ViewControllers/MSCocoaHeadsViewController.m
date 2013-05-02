@@ -62,7 +62,9 @@
 {
     [super viewWillDisappear:animated];
     
-    [self.moviePlayerController pause];
+    if (!self.moviePlayerController.fullscreen) {
+        [self.moviePlayerController pause];
+    }
 }
 
 
