@@ -71,6 +71,7 @@
     
     self.iconView = [[UIImageView alloc] init];
     self.iconView.frame = CGRectMake(-30, 5, 60, 60);
+    self.iconView.userInteractionEnabled = NO;
     [self addSubview:self.iconView];
 }
 

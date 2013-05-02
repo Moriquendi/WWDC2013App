@@ -22,6 +22,8 @@ NSString *const kMenuCellIdentifier = @"mci";
 <UICollectionViewDelegate,
 UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImage;
+@property (weak, nonatomic) IBOutlet UIView *cloudView;
 
 @end
 
@@ -36,19 +38,40 @@ UICollectionViewDataSource>
     self.title = @"Who am I?";
 
     self.view.backgroundColor = [UIColor clearColor];
-//    self.view.backgroundColor = [UIColor colorWithWhite:64.f/255.f alpha:1.0];
     
     self.collectionView.backgroundColor = [UIColor clearColor];
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"MSMenuCollectionViewCell" bundle:nil]
           forCellWithReuseIdentifier:kMenuCellIdentifier];
-    
+
+    self.avatarImage.layer.cornerRadius = self.avatarImage.frame.size.width/2.f;
+    self.avatarImage.clipsToBounds = YES;
+    self.avatarImage.layer.borderColor = [[UIColor whiteColor] CGColor];
+    self.avatarImage.layer.borderWidth = 1.0;
+
+    self.avatarImage.transform = CGAffineTransformScale(self.avatarImage.transform, 1/10, 1/10);
+    self.cloudView.transform = CGAffineTransformScale(self.cloudView.transform, 1/10, 1/10);
+    self.avatarImage.hidden = YES;
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
 
+    if (self.avatarImage.hidden) {
+        self.avatarImage.hidden = NO;
+        [UIView animateWithDuration:0.6 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            self.avatarImage.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.2, 1.2);
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+                self.avatarImage.transform = CGAffineTransformIdentity;
+            } completion:^(BOOL finished) {
+                [UIView animateWithDuration:0.6 animations:^{
+                    self.cloudView.transform = CGAffineTransformIdentity;
+                }];
+            }];
+        }];
+    }
     // Clean up after disappearing animations
     for (UICollectionViewCell *cell in [self.collectionView visibleCells]) {
         [UIView animateWithDuration:0.45 animations:^{
@@ -74,13 +97,13 @@ UICollectionViewDataSource>
 {
     MSMenuCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kMenuCellIdentifier forIndexPath:indexPath];
     
-    cell.layer.shadowColor = [[UIColor darkGrayColor] CGColor];
-    cell.layer.shadowRadius = 10.0;
-    cell.layer.shadowOpacity = 1.0;
+    cell.layer.shadowColor = [[UIColor blackColor] CGColor];
+    cell.layer.shadowRadius = 6.0;
+    cell.layer.shadowOpacity = 0.6;
     cell.clipsToBounds = NO;
     
-    NSArray *iconNames = @[@"iconProject", @"iconSchool", @"iconLearn", @"iconSchool"];
-    NSArray *titles = @[@"Projects", @"Work & School", @"Learn & Teach", @""];
+    NSArray *iconNames = @[@"iconProject", @"iconSchool", @"iconLearn"];
+    NSArray *titles = @[@"Projects", @"Work & School", @"Learn & Teach"];
     NSArray *highlightedColors = @[[UIColor colorWithRed:214.f/255.f
                                                    green:205.f/255.f
                                                     blue:80.f/255.f
