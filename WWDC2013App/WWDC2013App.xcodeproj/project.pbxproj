@@ -129,6 +129,8 @@
 		90ED0BB01732B29000D6F785 /* smat-catch-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 90ED0B9F1732B28B00D6F785 /* smat-catch-0.png */; };
 		90ED0BB11732B29000D6F785 /* smat-catch-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 90ED0BA01732B28D00D6F785 /* smat-catch-1.png */; };
 		90ED0BB21732B29000D6F785 /* smat-catch-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 90ED0BA11732B28E00D6F785 /* smat-catch-2.png */; };
+		90ED0BB41732BF1400D6F785 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 90ED0BB31732BF1300D6F785 /* icon.png */; };
+		90ED0BB61732BF3300D6F785 /* icsm.png in Resources */ = {isa = PBXBuildFile; fileRef = 90ED0BB51732BF3200D6F785 /* icsm.png */; };
 		90FD98AD17325C910005AB8E /* chmor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90FD98AC17325C910005AB8E /* chmor@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -278,6 +280,8 @@
 		90ED0B9F1732B28B00D6F785 /* smat-catch-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smat-catch-0.png"; sourceTree = "<group>"; };
 		90ED0BA01732B28D00D6F785 /* smat-catch-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smat-catch-1.png"; sourceTree = "<group>"; };
 		90ED0BA11732B28E00D6F785 /* smat-catch-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smat-catch-2.png"; sourceTree = "<group>"; };
+		90ED0BB31732BF1300D6F785 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		90ED0BB51732BF3200D6F785 /* icsm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icsm.png; sourceTree = "<group>"; };
 		90FD98AC17325C910005AB8E /* chmor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chmor@2x.png"; path = "Images/chmor@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -505,6 +509,8 @@
 		90D70E1717285B2800D7468E = {
 			isa = PBXGroup;
 			children = (
+				90ED0BB51732BF3200D6F785 /* icsm.png */,
+				90ED0BB31732BF1300D6F785 /* icon.png */,
 				90D70E2917285B2800D7468E /* WWDC2013App */,
 				90D70E2217285B2800D7468E /* Frameworks */,
 				90D70E2117285B2800D7468E /* Products */,
@@ -711,6 +717,8 @@
 				90ED0BB01732B29000D6F785 /* smat-catch-0.png in Resources */,
 				90ED0BB11732B29000D6F785 /* smat-catch-1.png in Resources */,
 				90ED0BB21732B29000D6F785 /* smat-catch-2.png in Resources */,
+				90ED0BB41732BF1400D6F785 /* icon.png in Resources */,
+				90ED0BB61732BF3300D6F785 /* icsm.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
