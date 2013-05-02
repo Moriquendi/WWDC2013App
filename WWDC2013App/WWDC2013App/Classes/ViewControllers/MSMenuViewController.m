@@ -14,6 +14,7 @@
 #import "MSConferencesViewController.h"
 #import "MSBaseViewController.h"
 #import "MSAGHViewController.h"
+#import "MSCocoaCampViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 NSString *const kMenuCellIdentifier = @"mci";
@@ -187,7 +188,8 @@ UICollectionViewDataSource>
             break;
         case 2: {
             NSArray *controllers = @[[[MSCocoaHeadsViewController alloc] init],
-                                     [[MSConferencesViewController alloc] init]];
+                                     [[MSConferencesViewController alloc] init],
+                                     [[MSCocoaCampViewController alloc] init]];
             MSWorkSchoolPageViewController *vc = [[MSWorkSchoolPageViewController alloc] initWithViewControllers:controllers];
             vc.title = @"Learn & Teach";
             [self performSelector:@selector(pushViewController:)

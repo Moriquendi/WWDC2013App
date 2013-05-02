@@ -97,7 +97,7 @@
 		90D70E3A17285B2800D7468E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D70E3917285B2800D7468E /* Default-568h@2x.png */; };
 		90D70E3D17285B2800D7468E /* MSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D70E3C17285B2800D7468E /* MSViewController.m */; };
 		90D70E4017285B2800D7468E /* MSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90D70E3E17285B2800D7468E /* MSViewController.xib */; };
-		90FD98AB17325AA30005AB8E /* comixcloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 90FD98AA17325AA30005AB8E /* comixcloud.png */; };
+		90ED0B6C17329FBD00D6F785 /* infinityloop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90ED0B6B17329FBD00D6F785 /* infinityloop.jpg */; };
 		90FD98AD17325C910005AB8E /* chmor.png in Resources */ = {isa = PBXBuildFile; fileRef = 90FD98AC17325C910005AB8E /* chmor.png */; };
 /* End PBXBuildFile section */
 
@@ -216,7 +216,7 @@
 		90D70E3B17285B2800D7468E /* MSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSViewController.h; sourceTree = "<group>"; };
 		90D70E3C17285B2800D7468E /* MSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSViewController.m; sourceTree = "<group>"; };
 		90D70E3F17285B2800D7468E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MSViewController.xib; sourceTree = "<group>"; };
-		90FD98AA17325AA30005AB8E /* comixcloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = comixcloud.png; path = Images/comixcloud.png; sourceTree = "<group>"; };
+		90ED0B6B17329FBD00D6F785 /* infinityloop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = infinityloop.jpg; path = Images/infinityloop.jpg; sourceTree = "<group>"; };
 		90FD98AC17325C910005AB8E /* chmor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chmor.png; path = Images/chmor.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -343,8 +343,8 @@
 		9070C044172BDB5300FD5EFD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				90ED0B6B17329FBD00D6F785 /* infinityloop.jpg */,
 				90FD98AC17325C910005AB8E /* chmor.png */,
-				90FD98AA17325AA30005AB8E /* comixcloud.png */,
 				903543EA1731ACBF00233E2A /* avatar.jpg */,
 				903543E81731A64F00233E2A /* weird.jpg */,
 				90C396B617315D2200D4E160 /* SmartCatchPromo.m4v */,
@@ -586,8 +586,8 @@
 				903543E517319A0100233E2A /* MSCocoaCampViewController.xib in Resources */,
 				903543E91731A64F00233E2A /* weird.jpg in Resources */,
 				903543EB1731ACBF00233E2A /* avatar.jpg in Resources */,
-				90FD98AB17325AA30005AB8E /* comixcloud.png in Resources */,
 				90FD98AD17325C910005AB8E /* chmor.png in Resources */,
+				90ED0B6C17329FBD00D6F785 /* infinityloop.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
