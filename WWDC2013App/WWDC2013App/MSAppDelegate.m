@@ -8,7 +8,6 @@
 
 #import "MSAppDelegate.h"
 
-#import "MSViewController.h"
 #import "MSProjectsViewController.h"
 #import "MSMenuViewController.h"
 #import "MSNavigationController.h"
