@@ -231,7 +231,7 @@
 		90C396B11731580B00D4E160 /* smat-catch-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "smat-catch-1@2x.png"; path = "Images/Projects/smat-catch-1@2x.png"; sourceTree = "<group>"; };
 		90C396B21731580B00D4E160 /* smat-catch-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "smat-catch-2@2x.png"; path = "Images/Projects/smat-catch-2@2x.png"; sourceTree = "<group>"; };
 		90C396B617315D2200D4E160 /* SmartCatchPromo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = SmartCatchPromo.m4v; path = Images/Projects/SmartCatchPromo.m4v; sourceTree = "<group>"; };
-		90D70E2017285B2800D7468E /* WWDC2013App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC2013App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D70E2017285B2800D7468E /* Michal WWDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Michal WWDC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D70E2317285B2800D7468E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		90D70E2517285B2800D7468E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		90D70E2717285B2800D7468E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -520,7 +520,7 @@
 		90D70E2117285B2800D7468E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				90D70E2017285B2800D7468E /* WWDC2013App.app */,
+				90D70E2017285B2800D7468E /* Michal WWDC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -585,7 +585,7 @@
 			);
 			name = WWDC2013App;
 			productName = WWDC2013App;
-			productReference = 90D70E2017285B2800D7468E /* WWDC2013App.app */;
+			productReference = 90D70E2017285B2800D7468E /* Michal WWDC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -837,7 +837,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWDC2013App/WWDC2013App-Prefix.pch";
 				INFOPLIST_FILE = "WWDC2013App/WWDC2013App-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Michal WWDC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -848,7 +848,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWDC2013App/WWDC2013App-Prefix.pch";
 				INFOPLIST_FILE = "WWDC2013App/WWDC2013App-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Michal WWDC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -267,7 +267,7 @@ ZXMgc3VjaCBhczo</string>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<bool key="IBUIUsesAttributedText">YES</bool>
 								<object class="NSAttributedString" key="IBUIAttributedText">
-									<string key="NSString">Game Day - for those who love create games, not only play.</string>
+									<string key="NSString">Game Day - for those who love to create games, not just play.</string>
 									<array class="NSMutableArray" key="NSAttributes">
 										<reference ref="92113177"/>
 										<reference ref="3954993"/>
@@ -282,7 +282,7 @@ ZXMgc3VjaCBhczo</string>
 										</dictionary>
 									</array>
 									<object class="NSMutableData" key="NSAttributeInfo">
-										<bytes key="NS.bytes">CAADAS8CA</bytes>
+										<bytes key="NS.bytes">CAADATICA</bytes>
 									</object>
 								</object>
 								<nil key="IBUIHighlightedColor"/>
